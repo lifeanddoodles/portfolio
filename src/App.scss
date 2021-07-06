@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #6699ff;
+  --secondary-color: #99ccff;
+  --accent-color: turquoise;
+  --text-color: #111;
+  --error: red;
+  --warning: yellow;
+  --success: green;
+  --info: blue;
+  --bg-color: #fefefe;
+  --base-font-size: 1em;
+}
+body {
+  color: var(--text-color);
+  font-size: var(--base-font-size);
+}
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+}
+.site-header,
+.site-footer {
+  padding: 1em;
+  background-color: var(--secondary-color);
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.site-footer {
+  flex-shrink: 0;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+.copyright:first-child {
+  margin-top: 0;
+}
+.content {
+  flex: 1 0 auto;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+.screen-reader-text {
+  border-radius: 3px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+
+  &:focus {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    display: block;
+    height: auto;
+    width: auto;
+    top: 5px;
+    left: 5px;
+    padding: 0.5em 1em;
+    color: #fefefe;
+    font-size: inherit;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    z-index: 100000;
+  }
+}
+.notification {
+  background-color: var(--bg-color);
+  padding: 1em;
+}
+.error,
+.success,
+.info {
+  --text-color: #fefefe;
+  color: var(--text-color);
+}
+.error {
+  --bg-color: var(--error);
+}
+.warning {
+  --bg-color: var(--warning);
+}
+.success {
+  --bg-color: var(--success);
+}
+.info {
+  --bg-color: var(--info);
+}
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --bg-color: #111;
+    --text-color: #fefefe;
+  }
+}
