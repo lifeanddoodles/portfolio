@@ -5,11 +5,11 @@ const Skills = () => {
   return (
     <section id="skills">
       <h3>Skills</h3>
-      <article>
+      <ul>
         {skills.map((skill: Skill, index: number) => {
           return <li key={index}>{skill.name}</li>
         })}
-      </article>
+      </ul>
       {/* <h4>Front-End</h4>
       <p>
         I can convert mockup designs into a fully functioning website. A

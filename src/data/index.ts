@@ -8,8 +8,8 @@ export const projects = [
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
     },
     image: {
-      thumbnail: './project-thumb.jpg',
-      full: './project.jpg',
+      thumbnail: './images/portfolio/twirly-whiskers-thumb.jpg',
+      full: './images/portfolio/twirly-whiskers.jpg',
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
@@ -29,8 +29,8 @@ export const projects = [
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
     },
     image: {
-      thumbnail: './project-thumb.jpg',
-      full: './project.jpg',
+      thumbnail: './images/portfolio/twirly-whiskers-thumb.jpg',
+      full: './images/portfolio/twirly-whiskers.jpg',
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
@@ -50,8 +50,8 @@ export const projects = [
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
     },
     image: {
-      thumbnail: './project-thumb.jpg',
-      full: './project.jpg',
+      thumbnail: './images/portfolio/twirly-whiskers-thumb.jpg',
+      full: './images/portfolio/twirly-whiskers.jpg',
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
@@ -71,8 +71,8 @@ export const projects = [
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
     },
     image: {
-      thumbnail: './project-thumb.jpg',
-      full: './project.jpg',
+      thumbnail: './images/portfolio/twirly-whiskers-thumb.jpg',
+      full: './images/portfolio/twirly-whiskers.jpg',
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
