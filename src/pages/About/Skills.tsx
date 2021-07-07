@@ -1,17 +1,15 @@
-import { Project } from '../../types/Model'
-import { projects } from '../../data'
+import { Skill } from '../../types/Model'
+import { skills } from '../../data'
 
 const Skills = () => {
   return (
     <section id="skills">
       <h3>Skills</h3>
-      {projects.map((project: Project, index: number) => {
-        return (
-          <article key={index}>
-            <h1>{project.title}</h1>
-          </article>
-        )
-      })}
+      <article>
+        {skills.map((skill: Skill, index: number) => {
+          return <li key={index}>{skill.name}</li>
+        })}
+      </article>
       {/* <h4>Front-End</h4>
       <p>
         I can convert mockup designs into a fully functioning website. A

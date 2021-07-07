@@ -13,8 +13,14 @@ export interface Project {
     code?: string
     live: string
   }
-  client?: string
+  client: string | null
   creativeItemType: string
-  technologies: []
-  tags?: []
+  technologies: string[]
+  tags?: string[]
+}
+
+export interface Skill {
+  icon: string
+  name: string
+  categories: string[]
 }
