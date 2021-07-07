@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <h3>Skills</h3>
-      <ul>
+      <ul itemProp="knowsAbout" id="skills">
         {skills.map((skill: Skill, index: number) => {
           return <li key={index}>{skill.name}</li>
         })}
