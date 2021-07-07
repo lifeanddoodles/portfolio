@@ -1,8 +1,15 @@
+import About from './About'
+import Contact from './Contact'
+import Hero from '../components/Hero'
+import Projects from './Projects'
+
 const Home = () => {
   return (
     <main>
-      <h1>Working in {process.env.NODE_ENV}</h1>
-      <p>Start editing this boilerplate!</p>
+      <Hero />
+      <Projects />
+      <About />
+      <Contact />
     </main>
   )
 }
