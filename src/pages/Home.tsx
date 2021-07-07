@@ -1,4 +1,4 @@
-export const Home = () => {
+const Home = () => {
   return (
     <main>
       <h1>Working in {process.env.NODE_ENV}</h1>
@@ -6,3 +6,5 @@ export const Home = () => {
     </main>
   )
 }
+
+export default Home
