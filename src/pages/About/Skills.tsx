@@ -1,25 +1,5 @@
+import { Project } from '../../types/Model'
 import { projects } from '../../data'
-
-interface Project {
-  id: string
-  title: string
-  subtitle: string
-  description: {
-    short: string
-  }
-  image: {
-    thumbnail: string
-    full: string
-  }
-  url: {
-    code?: string
-    live: string
-  }
-  client?: string
-  creativeItemType: string
-  technologies: []
-  tags?: []
-}
 
 const Skills = () => {
   return (
