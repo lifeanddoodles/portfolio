@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { Project } from '../types/Model'
 import { projects } from '../data'
 
@@ -13,16 +12,39 @@ const Projects = () => {
             itemScope
             itemType={`https://schema.org/${project.creativeItemType}`}
           >
-            <h3>{project.title}</h3>
+            <h3 itemProp="name">{project.title}</h3>
             <h4>{project.subtitle}</h4>
             {/* <img
               src={project.image.full}
               alt={project.title}
               itemProp="image"
             /> */}
-            <p>{project.description.short}</p>
-            <Link to={project.url.live}>View Project</Link>
-            {project.url.code && <Link to={project.url.code}>View Code</Link>}
+            <p itemProp="description">{project.description.short}</p>
+            <p itemProp="sourceOrganization">{project.client}</p>
+            <a
+              href={project.url.live}
+              itemProp="url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+            {project.url.code && (
+              <span
+                itemScope
+                itemType="https://schema.org/SoftwareSourceCode"
+                itemProp="subjectOf"
+              >
+                <a
+                  href={project.url.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemProp="codeRepository"
+                >
+                  View Code
+                </a>
+              </span>
+            )}
           </article>
         )
       })}

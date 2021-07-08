@@ -3,7 +3,7 @@ const Hero = () => {
     <section
       itemScope
       itemType="https://schema.org/Person"
-      itemRef="languages skills"
+      itemRef="languages skills social"
     >
       <h1>
         Hi, I&#39;m <span itemProp="name">Sandra Vargas</span>

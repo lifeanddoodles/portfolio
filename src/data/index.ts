@@ -13,7 +13,7 @@ export const projects = [
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
-      live: '',
+      live: 'https://lifeanddoodles.com/',
     },
     client: null,
     creativeItemType: `WebSite`,
@@ -34,7 +34,7 @@ export const projects = [
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
-      live: '',
+      live: 'https://lifeanddoodles.com/',
     },
     client: null,
     creativeItemType: `WebSite`,
@@ -55,7 +55,7 @@ export const projects = [
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
-      live: '',
+      live: 'https://lifeanddoodles.com/',
     },
     client: null,
     creativeItemType: `WebSite`,
@@ -76,7 +76,7 @@ export const projects = [
     },
     url: {
       code: 'https://github.com/lifeanddoodles/',
-      live: '',
+      live: 'https://lifeanddoodles.com/',
     },
     client: null,
     creativeItemType: `WebSite`,
