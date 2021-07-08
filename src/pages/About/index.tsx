@@ -3,10 +3,10 @@ import Skills from './Skills'
 const About = () => {
   return (
     <section id="about">
-      <h1>About me</h1>
+      <h2>About me</h2>
       <p>
         I have 12+ years of experience working with{' '}
-        <abbr title="HyperText Markup Languag">HTML</abbr>,{' '}
+        <abbr title="HyperText Markup Language">HTML</abbr>,{' '}
         <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript. Most of{' '}
         that time, I have worked with small digital agencies in the US.
       </p>

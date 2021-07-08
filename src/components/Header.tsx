@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Navbar } from './Navbar'
 
 export const Header = () => {
   return (
@@ -8,6 +9,7 @@ export const Header = () => {
           Site Logo
         </Link>
       </h1>
+      <Navbar />
     </header>
   )
 }
