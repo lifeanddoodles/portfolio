@@ -4,10 +4,9 @@ const currentYear = () => {
 
 export const Footer = () => {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer text-center">
       <section
-        className="social-footer
-        text-center"
+        className="social-footer"
         role="group"
         aria-label="Social media profiles"
         id="social"

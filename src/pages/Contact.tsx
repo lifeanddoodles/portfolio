@@ -1,19 +1,34 @@
 import { useState } from 'react'
+// import { ContactBody, Map } from '../types/Model'
 
 const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const encode = (data) => {
+  const encode = (data: {
+    'form-name': string
+    name: string
+    email: string
+    message: string
+  }): string => {
     return Object.keys(data)
       .map(
         (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
       )
       .join('&')
   }
+  // const test = (data: {
+  //   'form-name': string
+  //   name: string
+  //   email: string
+  //   message: string
+  // }): string => {
+  //   // return Object.keys(data).map((key) => (`${key, data[key]}`))
+  //   return JSON.stringify(Object.keys(data))
+  // }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     fetch('/', {
       method: 'POST',
@@ -21,15 +36,30 @@ const Contact = () => {
       body: encode({ 'form-name': 'contact', name, email, message }),
     })
       .then(() => alert('Message sent!'))
+      // .then(() =>
+      //   alert(
+      //     test({
+      //       'form-name': 'contact',
+      //       name: name,
+      //       email: email,
+      //       message: message,
+      //     })
+      //   )
+      // )
       .catch((error) => alert(error))
   }
 
   return (
     <section
       id="contact"
-      className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap"
+      className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
     >
-      <form netlify="true" name="contact" onSubmit={handleSubmit}>
+      <form
+        netlify="true"
+        name="contact"
+        onSubmit={handleSubmit}
+        className="xl:w-2/4 lg:w-3/4 mx-auto"
+      >
         <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
           Contact Me
         </h2>

@@ -24,3 +24,14 @@ export interface Skill {
   name: string
   categories: string[]
 }
+
+export interface Map {
+  [key: string]: string | undefined
+}
+
+export interface ContactBody {
+  'form-name': string
+  name: string
+  email: string
+  message: string
+}

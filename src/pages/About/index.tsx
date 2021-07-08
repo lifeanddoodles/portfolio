@@ -2,7 +2,10 @@ import Skills from './Skills'
 
 const About = () => {
   return (
-    <section id="about" className="container px-5 py-10 mx-auto">
+    <section
+      id="about"
+      className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
+    >
       <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
         About me
       </h2>
