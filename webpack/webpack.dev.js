@@ -1,4 +1,6 @@
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 
 module.exports = {
   mode: 'development',
@@ -9,5 +11,6 @@ module.exports = {
   },
   plugins: [
     new ReactRefreshWebpackPlugin(),
+    new InterpolateHtmlPlugin(HtmlWebpackPlugin, { PUBLIC_URL: '' }),
   ],
 }

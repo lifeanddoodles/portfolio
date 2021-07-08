@@ -3,51 +3,68 @@ import { projects } from '../data'
 
 const Projects = () => {
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      {projects.map((project: Project) => {
-        return (
-          <article
-            key={project.id}
-            itemScope
-            itemType={`https://schema.org/${project.creativeItemType}`}
-          >
-            <h3 itemProp="name">{project.title}</h3>
-            <h4>{project.subtitle}</h4>
-            {/* <img
-              src={project.image.full}
-              alt={project.title}
-              itemProp="image"
-            /> */}
-            <p itemProp="description">{project.description.short}</p>
-            <p itemProp="sourceOrganization">{project.client}</p>
-            <a
-              href={project.url.live}
-              itemProp="url"
-              target="_blank"
-              rel="noopener noreferrer"
+    <section
+      id="projects"
+      className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
+    >
+      <h2 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+        Projects
+      </h2>
+      <div className="flex flex-wrap -m-4">
+        {projects.map((project: Project) => {
+          return (
+            <article
+              key={project.id}
+              itemScope
+              itemType={`https://schema.org/${project.creativeItemType}`}
+              className="sm:w-1/2 w-100 p-4"
             >
-              View Project
-            </a>
-            {project.url.code && (
-              <span
-                itemScope
-                itemType="https://schema.org/SoftwareSourceCode"
-                itemProp="subjectOf"
+              <h3
+                itemProp="name"
+                className="title-font text-lg font-medium text-white mb-3"
               >
-                <a
-                  href={project.url.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  itemProp="codeRepository"
+                {project.title}
+              </h3>
+              <h4 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                {project.subtitle}
+              </h4>
+              {/* <img
+                src={project.image.full}
+                alt={project.title}
+                itemProp="image"
+              /> */}
+              <p itemProp="description" className="leading-relaxed">
+                {project.description.short}
+              </p>
+              <p itemProp="sourceOrganization">{project.client}</p>
+              <a
+                href={project.url.live}
+                itemProp="url"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+              {project.url.code && (
+                <span
+                  itemScope
+                  itemType="https://schema.org/SoftwareSourceCode"
+                  itemProp="subjectOf"
                 >
-                  View Code
-                </a>
-              </span>
-            )}
-          </article>
-        )
-      })}
+                  <a
+                    href={project.url.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    itemProp="codeRepository"
+                  >
+                    View Code
+                  </a>
+                </span>
+              )}
+            </article>
+          )
+        })}
+      </div>
     </section>
   )
 }
