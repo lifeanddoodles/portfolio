@@ -1,6 +1,8 @@
 import { Project } from '../types/Model'
 import { projects } from '../data'
 
+// const pathToAssets = require.context('assets/', false, /\.(png|jpe?g|svg)$/)
+
 const Projects = () => {
   return (
     <section

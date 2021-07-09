@@ -36,8 +36,9 @@ module.exports = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, '..', './build'),
     filename: 'bundle.js',
+    path: path.resolve(__dirname, '..', './build'),
+    assetModuleFilename: 'images/[name][ext][query]',
   },
   plugins: [
     new HtmlWebpackPlugin({
