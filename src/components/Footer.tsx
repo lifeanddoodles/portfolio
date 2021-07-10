@@ -1,10 +1,13 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 const currentYear = () => {
   return new Date().getFullYear()
 }
 
 export const Footer = () => {
   return (
-    <footer className="site-footer text-center">
+    <footer className="site-footer text-center pb-10">
       <section
         className="social-footer"
         role="group"
@@ -19,17 +22,17 @@ export const Footer = () => {
           aria-label="Visit GitHub profile"
           itemProp="sameAs"
         >
-          Github
+          <FontAwesomeIcon icon={faGithub} /> Github
         </a>
         <a
-          className="icon-link"
+          className="icon-link ml-4"
           href="https://www.linkedin.com/in/sandralvargas/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit LinkedIn profile"
           itemProp="sameAs"
         >
-          LinkedIn
+          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
       </section>
       <p className="copyright">Copyright {currentYear()}.</p>

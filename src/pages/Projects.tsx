@@ -1,5 +1,6 @@
 import { Project } from '../types/Model'
 import { projects } from '../data'
+import { CodeIcon, ExternalLinkIcon } from '@heroicons/react/solid'
 
 // const pathToAssets = require.context('assets/', false, /\.(png|jpe?g|svg)$/)
 
@@ -9,6 +10,7 @@ const Projects = () => {
       id="projects"
       className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
     >
+      <CodeIcon className="mx-auto inline-block w-10 mb-4" />
       <h2 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
         Projects
       </h2>
@@ -35,7 +37,7 @@ const Projects = () => {
                 alt={project.title}
                 itemProp="image"
               /> */}
-              <p itemProp="description" className="leading-relaxed">
+              <p itemProp="description" className="leading-relaxed mb-4">
                 {project.description.short}
               </p>
               <p itemProp="sourceOrganization">{project.client}</p>
@@ -44,8 +46,10 @@ const Projects = () => {
                 itemProp="url"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg"
               >
                 View Project
+                <ExternalLinkIcon className="inline-block w-4 ml-2" />
               </a>
               {project.url.code && (
                 <span
@@ -58,8 +62,10 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     itemProp="codeRepository"
+                    className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg"
                   >
                     View Code
+                    <ExternalLinkIcon className="inline-block w-4 ml-2" />
                   </a>
                 </span>
               )}

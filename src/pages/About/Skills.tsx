@@ -1,9 +1,11 @@
 import { Skill } from '../../types/Model'
 import { skills } from '../../data'
+import { SparklesIcon } from '@heroicons/react/solid'
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <section id="skills" className="mb-10">
+      <SparklesIcon className="mx-auto inline-block w-10 mb-4" />
       <h3 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
         Skills
       </h3>

@@ -1,87 +1,45 @@
 export const projects = [
   {
     id: '001',
-    title: 'React Reserve',
-    subtitle: 'MERN Stack',
+    title: 'Soundscapes Website',
+    subtitle: 'WordPress Theme & Plugin',
     description: {
       short:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        'Designed and developed a theme based on their requirements and feedback, added extra functionality through Gutenberg blocks enabled through a plugin.',
     },
     image: {
       thumbnail: '../assets/images/portfolio/alex-dvm-thumb.jpg',
       full: '../assets/images/portfolio/alex-dvm.jpg',
     },
     url: {
-      code: 'https://github.com/lifeanddoodles/',
-      live: 'https://lifeanddoodles.com/',
+      code: '',
+      live: 'https://client.lifeanddoodles.com/soundscapes/',
     },
     client: null,
-    creativeItemType: `WebSite`,
-    technologies: ['HTML', 'CSS'],
-    tags: ['Web Development', 'Theme Development'],
+    creativeItemType: 'WebSite',
+    technologies: ['WordPress', 'HTML', 'CSS'],
+    tags: ['Web Development', 'Theme Development', 'Plugin Development'],
   },
   {
     id: '002',
-    title: 'React Tracks',
-    subtitle: 'React and Python',
+    title: '100 Poems',
+    subtitle: 'React Application',
     description: {
       short:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        'An application to view the poems from the famous Japanese anthology "Hyakunin Isshu" (百人一首) that saves your viewing preferences on the local storage.',
     },
     image: {
       thumbnail: '/images/twirly-whiskers-thumb.jpg',
       full: '/images/twirly-whiskers.jpg',
     },
     url: {
-      code: 'https://github.com/lifeanddoodles/',
-      live: 'https://lifeanddoodles.com/',
+      code: 'https://github.com/lifeanddoodles/hundred-poems/',
+      live: 'https://lifeanddoodles.github.io/hundred-poems/',
     },
     client: null,
-    creativeItemType: `WebSite`,
-    technologies: ['HTML', 'CSS'],
-    tags: ['Web Development', 'Theme Development'],
-  },
-  {
-    id: '003',
-    title: 'DevChat',
-    subtitle: 'React and Firebase',
-    description: {
-      short:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
-    },
-    image: {
-      thumbnail: '/images/twirly-whiskers-thumb.jpg',
-      full: '/images/twirly-whiskers.jpg',
-    },
-    url: {
-      code: 'https://github.com/lifeanddoodles/',
-      live: 'https://lifeanddoodles.com/',
-    },
-    client: null,
-    creativeItemType: `WebSite`,
-    technologies: ['HTML', 'CSS'],
-    tags: ['Web Development', 'Theme Development'],
-  },
-  {
-    id: '004',
-    title: 'Epic Todo App',
-    subtitle: 'React Hooks',
-    description: {
-      short:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
-    },
-    image: {
-      thumbnail: '/images/twirly-whiskers-thumb.jpg',
-      full: '/images/twirly-whiskers.jpg',
-    },
-    url: {
-      code: 'https://github.com/lifeanddoodles/',
-      live: 'https://lifeanddoodles.com/',
-    },
-    client: null,
-    creativeItemType: `WebSite`,
-    technologies: ['HTML', 'CSS'],
-    tags: ['Web Development', 'Theme Development'],
+    creativeItemType: 'WebSite',
+    technologies: ['React', 'HTML', 'CSS'],
+    tags: ['App Development', 'Web Development'],
   },
 ]
 
@@ -112,9 +70,14 @@ export const skills = [
     categories: ['frontend'],
   },
   {
-    icon: `images/logos/jquery.svg`,
-    name: `jQuery`,
-    categories: ['frontend'],
+    icon: `git`,
+    name: `Git`,
+    categories: ['frontend', 'backend'],
+  },
+  {
+    icon: `npm`,
+    name: `NPM`,
+    categories: ['frontend', 'backend'],
   },
   {
     icon: `node`,
