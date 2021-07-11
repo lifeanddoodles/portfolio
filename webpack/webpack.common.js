@@ -18,12 +18,20 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.(s[ac]ss|css)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                config: path.resolve(__dirname, '..', 'postcss.config.js'),
+              },
+            },
+          },
+          'sass-loader',
+        ],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
@@ -39,6 +47,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '..', './build'),
     assetModuleFilename: 'images/[name][ext][query]',
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
