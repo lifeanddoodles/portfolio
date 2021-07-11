@@ -46,7 +46,7 @@ const Projects = () => {
                 itemProp="url"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg"
+                className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4"
               >
                 View Project
                 <ExternalLinkIcon className="inline-block w-4 ml-2" />
@@ -62,7 +62,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     itemProp="codeRepository"
-                    className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg"
+                    className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4"
                   >
                     View Code
                     <ExternalLinkIcon className="inline-block w-4 ml-2" />
