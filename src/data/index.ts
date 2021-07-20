@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: '001',
-    title: 'Soundscapes Website',
+    title: 'Nonprofit Website',
     subtitle: 'WordPress Theme & Plugin',
     description: {
       short:
@@ -13,7 +13,7 @@ export const projects = [
     },
     url: {
       code: '',
-      live: 'https://client.lifeanddoodles.com/soundscapes/',
+      live: 'https://client.lifeanddoodles.com/soundshq/',
     },
     client: null,
     creativeItemType: 'WebSite',
@@ -22,7 +22,7 @@ export const projects = [
   },
   {
     id: '002',
-    title: '100 Poems',
+    title: '100 Poems (WIP)',
     subtitle: 'React Application',
     description: {
       short:
