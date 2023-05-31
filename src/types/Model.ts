@@ -19,10 +19,17 @@ export interface Project {
   tags?: string[]
 }
 
+export enum SkillProficiencyLevel {
+  beginner = 'beginner',
+  medium = 'medium',
+  advanced = 'advanced',
+}
+
 export interface Skill {
   icon: string
   name: string
   categories: string[]
+  proficiencyLevel: keyof typeof SkillProficiencyLevel
 }
 
 export interface Map {

@@ -10,3 +10,4 @@ declare module '*.svg' {
 declare global {
   function encodeURIComponent(uriComponent: string | number | boolean): string
 }
+declare module '@heroicons/react/solid'

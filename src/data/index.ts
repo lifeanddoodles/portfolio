@@ -1,3 +1,5 @@
+import { SkillProficiencyLevel } from '../types/Model'
+
 export const projects = [
   {
     id: '001',
@@ -45,63 +47,99 @@ export const projects = [
 
 export const skills = [
   {
+    icon: `react`,
+    name: `React`,
+    categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
+  },
+  {
+    icon: `styled-components`,
+    name: `Styled components`,
+    categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
+  },
+  {
+    icon: `redux`,
+    name: `Redux`,
+    categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.medium,
+  },
+  {
+    icon: `typescript`,
+    name: `TypeScript`,
+    categories: ['frontend', 'backend'],
+    proficiencyLevel: SkillProficiencyLevel.medium,
+  },
+  {
+    icon: `wcag`,
+    name: `WCAG/Accessibility`,
+    categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
+  },
+  {
+    icon: `schema-markup`,
+    name: `Schema markup`,
+    categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
+  },
+  {
     icon: `html5`,
     name: `HTML5`,
     categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     icon: `css3`,
     name: `CSS3`,
     categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     icon: `sass`,
-    name: `Sass`,
+    name: `SASS`,
     categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     icon: `js`,
-    name: `JavaScript (ES6)`,
+    name: `JavaScript (ES6+)`,
     categories: ['frontend'],
-  },
-  {
-    icon: `react`,
-    name: `React`,
-    categories: ['frontend'],
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     icon: `git`,
     name: `Git`,
-    categories: ['frontend', 'backend'],
+    categories: ['tooling'],
+    proficiencyLevel: SkillProficiencyLevel.medium,
   },
   {
     icon: `npm`,
     name: `NPM`,
-    categories: ['frontend', 'backend'],
+    categories: ['tooling'],
+    proficiencyLevel: SkillProficiencyLevel.medium,
+  },
+  {
+    icon: `slack`,
+    name: `Slack`,
+    categories: ['collaboration'],
+    proficiencyLevel: SkillProficiencyLevel.medium,
+  },
+  {
+    icon: `jira`,
+    name: `JIRA`,
+    categories: ['collaboration'],
+    proficiencyLevel: SkillProficiencyLevel.medium,
   },
   {
     icon: `node`,
     name: `Node.js`,
     categories: ['backend'],
+    proficiencyLevel: SkillProficiencyLevel.beginner,
   },
   {
     icon: `images/logos/express.svg`,
     name: `Express.js`,
     categories: ['backend'],
-  },
-  {
-    icon: `images/logos/photoshop.svg`,
-    name: `Photoshop`,
-    categories: ['design'],
-  },
-  {
-    icon: `images/logos/illustrator.svg`,
-    name: `Illustrator`,
-    categories: ['design'],
-  },
-  {
-    icon: `images/logos/indesign.svg`,
-    name: `InDesign`,
-    categories: ['design'],
+    proficiencyLevel: SkillProficiencyLevel.beginner,
   },
 ]

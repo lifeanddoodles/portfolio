@@ -1,6 +1,6 @@
-import { Skill } from '../../types/Model'
+import { SparklesIcon } from '@heroicons/react/24/solid'
 import { skills } from '../../data'
-import { SparklesIcon } from '@heroicons/react/solid'
+import { Skill } from '../../types/Model'
 
 const Skills = () => {
   return (

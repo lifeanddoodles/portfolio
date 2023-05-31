@@ -1,5 +1,5 @@
+import { UserIcon } from '@heroicons/react/24/solid'
 import Skills from './Skills'
-import { UserIcon } from '@heroicons/react/solid'
 
 const About = () => {
   return (
