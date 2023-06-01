@@ -11,3 +11,4 @@ declare global {
   function encodeURIComponent(uriComponent: string | number | boolean): string
 }
 declare module '@heroicons/react/solid'
+declare module 'react-router-dom'
