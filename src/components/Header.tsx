@@ -1,7 +1,21 @@
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Navbar } from './Navbar'
 
 export const Header = () => {
+  const { t, i18n } = useTranslation()
+  /* The names of the translation files that will be used in the component. 
+  You can include multiple or just leave it empty and look through all the translation files 
+  but its better to just state only the ones you need. */
+
+  const changeLanguage = (code: string) => {
+    i18n.changeLanguage(
+      code
+    ) /* Sends i81n the code of the language to change and the function in i18n.js takes this code and sets
+    it to the local storage variable. The language detector detects this and translates the text that
+    is either in a "t" function or inside a "Trans" component */
+  }
+
   return (
     <header id="site-header" className="bg-gray-800 md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -17,6 +31,18 @@ export const Header = () => {
         >
           Contact
         </a>
+        <button
+          type="button"
+          onClick={() => {
+            changeLanguage('es')
+          }}
+        >
+          {t('language.es')}
+        </button>
+
+        <button type="button" onClick={() => changeLanguage('en')}>
+          {t('language.en')}
+        </button>
       </div>
     </header>
   )

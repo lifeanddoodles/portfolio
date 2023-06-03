@@ -1,0 +1,11 @@
+{
+  "skip-to-content": "Saltar a contenido",
+  "hero-title": "ES: Hi, I&#39;m <span itemProp=\"name\">Sandra Vargas</span>",
+  "hero-description": "ES:  I&#39;m a <span itemProp=\"jobTitle\">Front-end developer</span> interested in the React ecosystem and in the application of accessibility guidelines and Schema Markup.",
+  "main-cta": "ES: Work with me",
+  "secondary-cta": "ES: See my past work",
+  "language": {
+    "en": "English",
+    "es": "Español"
+  }
+}

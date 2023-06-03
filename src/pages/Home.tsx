@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import Hero from '../components/Hero'
@@ -6,10 +7,12 @@ import Contact from './Contact'
 import Projects from './Projects'
 
 const Home = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <a className="skip-link screen-reader-text" href="#content">
-        Skip to content
+        {t('skip-to-content')}
       </a>
       <Header />
       <div id="content" className="content">

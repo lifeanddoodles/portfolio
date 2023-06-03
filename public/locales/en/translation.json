@@ -1,0 +1,11 @@
+{
+  "skip-to-content": "Skip to content",
+  "hero-title": "Hi, I'm <span_tag>Sandra Vargas</span_tag>",
+  "hero-description": "I'm a <span_tag>Front-end developer</span_tag> interested in the React ecosystem and in the application of accessibility guidelines and Schema Markup.",
+  "main-cta": "Work with me",
+  "secondary-cta": "See my past work",
+  "language": {
+    "en": "English",
+    "es": "Español"
+  }
+}
