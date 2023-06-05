@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 // import { ContactBody, Map } from '../types/Model'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 
@@ -23,6 +24,8 @@ const Form = ({
   onSubmit,
   ...rest
 }: FormProps) => {
+  const { t } = useTranslation()
+
   return (
     <form
       {...rest}
@@ -31,16 +34,12 @@ const Form = ({
       className="xl:w-2/4 lg:w-3/4 mx-auto"
     >
       <h2 className="text-white sm:text-4xl text-3xl mb-4 font-medium title-font">
-        Contact Me
+        {t('contact.title')}
       </h2>
-      <p className="leading-relaxed mb-5">
-        Want to work together on a project? Have a question about my experience?
-        Fill out the contact form and I’ll get back to you within 24 business
-        hours.
-      </p>
+      <p className="leading-relaxed mb-5">{t('contact.description')}</p>
       <div className="relative mb-4">
         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-          Name
+          {t('contact.form.name')}
         </label>
         <input
           type="text"
@@ -53,7 +52,7 @@ const Form = ({
       </div>
       <div className="relative mb-4">
         <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-          Email
+          {t('contact.form.email')}
         </label>
         <input
           type="email"
@@ -66,7 +65,7 @@ const Form = ({
       </div>
       <div className="relative mb-4">
         <label htmlFor="message" className="leading-7 text-sm text-gray-400">
-          Message
+          {t('contact.form.message')}
         </label>
         <textarea
           id="message"
@@ -80,7 +79,7 @@ const Form = ({
         type="submit"
         className="text-white bg-green-700 border-0 py-2 px-6 hover:bg-green-600 rounded text-lg"
       >
-        Submit
+        {t('contact.form.submit')}
       </button>
     </form>
   )
@@ -101,15 +100,14 @@ const Contact = () => {
       )
       .join('&')
   }
-  // const test = (data: {
-  //   'form-name': string
-  //   name: string
-  //   email: string
-  //   message: string
-  // }): string => {
-  //   // return Object.keys(data).map((key) => (`${key, data[key]}`))
-  //   return JSON.stringify(Object.keys(data))
-  // }
+  const test = (data: {
+    'form-name': string
+    name: string
+    email: string
+    message: string
+  }): void => {
+    return console.log(data)
+  }
 
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (
     e: React.FormEvent<HTMLFormElement>
@@ -121,16 +119,15 @@ const Contact = () => {
       body: encode({ 'form-name': 'contact', name, email, message }),
     })
       .then(() => alert('Message sent!'))
-      // .then(() =>
-      //   alert(
-      //     test({
-      //       'form-name': 'contact',
-      //       name: name,
-      //       email: email,
-      //       message: message,
-      //     })
-      //   )
-      // )
+      .then(() => {
+        process.env.NODE_ENV === 'development' &&
+          test({
+            'form-name': 'contact',
+            name: name,
+            email: email,
+            message: message,
+          })
+      })
       .catch((error) => alert(error))
   }
 

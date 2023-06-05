@@ -3,12 +3,15 @@ import {
   CodeBracketIcon,
 } from '@heroicons/react/24/solid'
 // import { projects } from '../data'
+import { Trans, useTranslation } from 'react-i18next'
 import { Project } from '../types/Model'
 
 // const pathToAssets = require.context('assets/', false, /\.(png|jpe?g|svg)$/)
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ProjectItem = ({ project }: { project: Project }) => {
+  const { t } = useTranslation()
+
   return (
     <article
       itemScope
@@ -40,7 +43,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
         rel="noopener noreferrer"
         className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4"
       >
-        View Project
+        {t('projects.callsToAction.main')}
         <ArrowTopRightOnSquareIcon className="inline-block w-4 ml-2" />
       </a>
       {project.url.code && (
@@ -56,7 +59,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
             itemProp="codeRepository"
             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4"
           >
-            View Code
+            {t('projects.callsToAction.secondary')}
             <ArrowTopRightOnSquareIcon className="inline-block w-4 ml-2" />
           </a>
         </span>
@@ -66,6 +69,8 @@ const ProjectItem = ({ project }: { project: Project }) => {
 }
 
 const Projects = () => {
+  const { t } = useTranslation()
+
   return (
     <section
       id="projects"
@@ -73,11 +78,24 @@ const Projects = () => {
     >
       <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
       <h2 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-        Projects
+        {t('projects.title')}
       </h2>
-      <h3 className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4">
-        Coming soon
-      </h3>
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4">
+        <Trans
+          i18nKey="projects.description"
+          components={{
+            bold_tag: <strong />,
+            external_anchor_tag: (
+              // eslint-disable-next-line jsx-a11y/anchor-has-content
+              <a
+                href="https://github.com/lifeanddoodles/portfolio"
+                target="_blank"
+                rel="noreferrer"
+              />
+            ),
+          }}
+        />
+      </p>
       {/* <div className="flex flex-wrap -m-4">
         {projects?.map((project: Project) => {
           return <ProjectItem project={project} key={project.id} />

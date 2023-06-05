@@ -1,7 +1,10 @@
 import { UserIcon } from '@heroicons/react/24/solid'
+import { Trans, useTranslation } from 'react-i18next'
 import Skills from './Skills'
 
 const About = () => {
+  const { t } = useTranslation()
+
   return (
     <section
       id="about"
@@ -9,27 +12,53 @@ const About = () => {
     >
       <UserIcon className="mx-auto inline-block w-10 mb-4" />
       <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-        About me
+        {t('about.title')}
       </h2>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4">
-        I have 12+ years of experience working with{' '}
-        <abbr title="HyperText Markup Language">HTML</abbr>,{' '}
-        <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript. Most of{' '}
-        that time, I have worked with small digital agencies in the US.
-      </p>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-10">
-        Although I am looking for projects in the React ecosystem, I am willing{' '}
-        to learn and work with other technologies (I am a dabbler in the{' '}
-        <abbr title="MongoDB, Express, React, Node">MERN</abbr> and{' '}
-        <abbr title="PostgreSQL, Express, React, and Node">PERN</abbr> stacks).
-      </p>
+      <Trans
+        i18nKey="about.description"
+        components={{
+          paragraph_tag: (
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4" />
+          ),
+          abbreviation_tag_1: <abbr title="HyperText Markup Language" />,
+          abbreviation_tag_2: <abbr title="Cascading Style Sheets" />,
+          abbreviation_tag_3: <abbr title="MongoDB, Express, React, Node" />,
+          abbreviation_tag_4: (
+            <abbr title="PostgreSQL, Express, React, and Node" />
+          ),
+        }}
+      />
       <Skills />
+      <h4 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">
+        {t('languages.title')}
+      </h4>
+      <Trans i18nKey="list_map">
+        {t('languages.description')}
+        <ul
+          itemProp="knowsLanguage"
+          id="languages"
+          className="flex flex-wrap mb-4 lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"
+          // eslint-disable-next-line react/no-unknown-property
+          i18nIsDynamicList
+        >
+          {t('languages.items', { returnObject: true })
+            .split(', ')
+            .map((item, index) => (
+              <li key={index} className="p-2 sm:w-1/2">
+                <span className="title-font font-medium text-white">
+                  {item}
+                </span>
+              </li>
+            ))}
+        </ul>
+      </Trans>
       <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4">
-        I also speak{' '}
-        <span itemProp="knowsLanguage" id="languages">
-          Spanish and English
-        </span>
-        , and am currently studying Japanese and French.
+        <Trans
+          i18nKey="languages.note"
+          components={{
+            abbreviation_tag: <abbr title="Internationalization" />,
+          }}
+        />
       </p>
     </section>
   )

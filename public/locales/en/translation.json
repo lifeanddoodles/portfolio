@@ -1,11 +1,217 @@
 {
-  "skip-to-content": "Skip to content",
-  "hero-title": "Hi, I'm <span_tag>Sandra Vargas</span_tag>",
-  "hero-description": "I'm a <span_tag>Front-end developer</span_tag> interested in the React ecosystem and in the application of accessibility guidelines and Schema Markup.",
-  "main-cta": "Work with me",
-  "secondary-cta": "See my past work",
-  "language": {
+  "skipToContent": "Skip to content",
+  "navMenu": {
+    "home": {
+      "label": "Sandra Vargas",
+      "url": "/"
+    },
+    "projects": {
+      "label": "Projects",
+      "url": "#projects"
+    },
+    "about": {
+      "label": "About",
+      "url": "#about"
+    },
+    "skills": {
+      "label": "Skills",
+      "url": "#skills"
+    },
+    "contact": {
+      "label": "Contact",
+      "url": "#contact"
+    }
+  },
+  "languageSwitcher": {
     "en": "English",
     "es": "Español"
+  },
+  "hero": {
+    "title": "Hi, I'm <span_tag>Sandra Vargas</span_tag>",
+    "description": "I'm a <span_tag>Front-end developer</span_tag> with 12+ years of professional experience creating websites and 3 working with web applications. I am like optimizing scalability, accessibility, and UI/UX in all my projects.",
+    "mainCta": "Work with me",
+    "secondaryCta": "See my past work"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "<bold_tag>Coming soon</bold_tag>. In the meantime, you can take a look at this <external_anchor_tag>portfolio's repo</external_anchor_tag> on GitHub, to get an idea of how I like to work on my projects.",
+    "items": [
+      {
+        "id": "001",
+        "title": "100 Poems (WIP)",
+        "subtitle": "React Application",
+        "description": "An application to view the poems from the famous Japanese anthology \"Hyakunin Isshu\" (百人一首) that saves your viewing preferences on the local storage.",
+        "image": {
+          "thumbnail": "/images/twirly-whiskers-thumb.jpg",
+          "full": "/images/twirly-whiskers.jpg"
+        },
+        "url": {
+          "code": "https://github.com/lifeanddoodles/hundred-poems/",
+          "live": "https://lifeanddoodles.github.io/hundred-poems/"
+        },
+        "client": null,
+        "creativeItemType": "WebSite",
+        "technologies": ["React", "HTML", "CSS"],
+        "tags": ["App Development", "Web Development"]
+      },
+      {
+        "id": "002",
+        "title": "Fullstack",
+        "subtitle": "React Fullstack Application",
+        "description": "Lorem ipsum dolor",
+        "image": {
+          "thumbnail": "/images/twirly-whiskers-thumb.jpg",
+          "full": "/images/twirly-whiskers.jpg"
+        },
+        "url": {
+          "code": "https://github.com/lifeanddoodles/hundred-poems/",
+          "live": "https://lifeanddoodles.github.io/hundred-poems/"
+        },
+        "client": null,
+        "creativeItemType": "WebSite",
+        "technologies": ["React", "HTML", "CSS"],
+        "tags": ["App Development", "Web Development"]
+      }
+    ],
+    "callsToAction": {
+      "main": "View project",
+      "secondary": "View code"
+    }
+  },
+  "about": {
+    "title": "About",
+    "description": "<paragraph_tag>I have 12+ years of experience working with <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2> and JavaScript. Most of that time, I have worked with small digital agencies in the US.</paragraph_tag><paragraph_tag>Although I am most familiar with the React ecosystem, I am willing to learn and work with other technologies (I am a dabbler in the <abbreviation_tag_3>MERN</abbreviation_tag_3> and <abbreviation_tag_4>PERN</abbreviation_tag_4> stacks).</paragraph_tag>"
+  },
+  "skills": {
+    "title": "Skills",
+    "items": [
+      {
+        "id": "react",
+        "name": "React",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "css-in-js",
+        "name": "CSS-in-JS",
+        "description": "Mainly Styled components, but I've also used Emotion CSS and libraries like <external_anchor_tag>Styled System</external_anchor_tag>(https://styled-system.com/)."
+      },
+      {
+        "id": "redux",
+        "name": "Redux",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "typescript",
+        "name": "TypeScript",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "accessibility",
+        "name": "Accessibility",
+        "description": "Adhere to <acronym_tag>WCAG</acronym_tag> principles, add relevant ARIA attributes to improve accessibility"
+      },
+      {
+        "id": "schema-markup",
+        "name": "Schema markup",
+        "description": "Use structured data in applicable elements to improve search engine results by making the content more understandable."
+      },
+      {
+        "id": "html",
+        "name": "HTML5",
+        "description": "Use semantic elements."
+      },
+      {
+        "id": "css",
+        "name": "CSS3",
+        "description": "Use modern CSS techniques to style webpages and applications."
+      },
+      {
+        "id": "sass",
+        "name": "SASS",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "javascript",
+        "name": "JavaScript (ES6+)",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "git",
+        "name": "Git",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "npm",
+        "name": "NPM",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "slack",
+        "name": "Slack",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "jira",
+        "name": "JIRA",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "node",
+        "name": "Node.js",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "express",
+        "name": "Express.js",
+        "description": "Lorem_ipsum_dolor"
+      }
+    ],
+    "proficiencyDescription": {
+      "beginner": "I'm familiar with these technologies, mainly following tutorials and courses, since I wanted to learn more about them.",
+      "medium": "I've used these technologies in personal projects, not professionally, but I'm confident that I can solve issues I might encounter with them.",
+      "advanced": "I've either used these technologies professionally (in a freelance project or a full-time job) or I'm fairly familiar with them."
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "description": "I know the following languages:",
+    "items": "Spanish (Native), English (Advanced)",
+    "note": "I am currently studying Japanese and French, and as a language learner I am really interested in <abbreviation_tag>i18n</abbreviation_tag>, and how different languages impact an application's layout and overall UI/UX."
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Want to work together on a project? Have a question about my experience? Fill out the contact form and I’ll get back to you.",
+    "availability": {
+      "available": "I'm currently <available_tag>available</available_tag> for freelance work.",
+      "notAvailable": "I'm currently <not_available_tag>not available</not_available_tag> for freelance work."
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send",
+      "result": {
+        "success": "Message sent successfully.",
+        "error": "Something went wrong and message could not be sent."
+      }
+    }
+  },
+  "footer": {
+    "social": {
+      "ariaLabel": "Social media profiles",
+      "items": [
+        {
+          "icon": "github",
+          "ariaLabel": "Visit my GitHub profile",
+          "url": "https://github.com/lifeanddoodles"
+        },
+        {
+          "icon": "linkedin",
+          "ariaLabel": "Visit my LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sandralvargas/"
+        }
+      ]
+    },
+    "copyright": "Copyright © {{year}}. All rights reserved."
   }
 }

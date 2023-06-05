@@ -1,11 +1,217 @@
 {
-  "skip-to-content": "Saltar a contenido",
-  "hero-title": "ES: Hi, I&#39;m <span itemProp=\"name\">Sandra Vargas</span>",
-  "hero-description": "ES:  I&#39;m a <span itemProp=\"jobTitle\">Front-end developer</span> interested in the React ecosystem and in the application of accessibility guidelines and Schema Markup.",
-  "main-cta": "ES: Work with me",
-  "secondary-cta": "ES: See my past work",
-  "language": {
+  "skipToContent": "Saltar a contenido",
+  "navMenu": {
+    "home": {
+      "label": "Inicio",
+      "url": "/"
+    },
+    "projects": {
+      "label": "Proyectos",
+      "url": "#projects"
+    },
+    "about": {
+      "label": "Acerca",
+      "url": "#about"
+    },
+    "skills": {
+      "label": "Habilidades",
+      "url": "#skills"
+    },
+    "contact": {
+      "label": "Contacto",
+      "url": "#contact"
+    }
+  },
+  "languageSwitcher": {
     "en": "English",
     "es": "Español"
+  },
+  "hero": {
+    "title": "Hola, soy <span_tag>Sandra Vargas</span_tag>",
+    "description": "Soy una <span_tag>desarrolladora Front-end</span_tag> con 12+ años de experiencia profesional creando sitios web y 3 trabajando en aplicaciones web. Me gusta optimizar escalabilidad, accesibilidad, y UI/UX en todos mis proyectos.",
+    "mainCta": "Trabaja conmigo",
+    "secondaryCta": "Ver proyectos anteriores"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "<bold_tag>Proximamente</bold_tag>. Por ahora, puedes ver el <external_anchor_tag>repo de este portafolio</external_anchor_tag> en GitHub, para obtener una idea de cómo me gusta trabajar en mis proyectos.",
+    "items": [
+      {
+        "id": "001",
+        "title": "100 Poems (WIP)",
+        "subtitle": "React Application",
+        "description": "An application to view the poems from the famous Japanese anthology \"Hyakunin Isshu\" (百人一首) that saves your viewing preferences on the local storage.",
+        "image": {
+          "thumbnail": "/images/twirly-whiskers-thumb.jpg",
+          "full": "/images/twirly-whiskers.jpg"
+        },
+        "url": {
+          "code": "https://github.com/lifeanddoodles/hundred-poems/",
+          "live": "https://lifeanddoodles.github.io/hundred-poems/"
+        },
+        "client": null,
+        "creativeItemType": "WebSite",
+        "technologies": ["React", "HTML", "CSS"],
+        "tags": ["App Development", "Web Development"]
+      },
+      {
+        "id": "002",
+        "title": "Fullstack",
+        "subtitle": "React Fullstack Application",
+        "description": "Lorem ipsum dolor",
+        "image": {
+          "thumbnail": "/images/twirly-whiskers-thumb.jpg",
+          "full": "/images/twirly-whiskers.jpg"
+        },
+        "url": {
+          "code": "https://github.com/lifeanddoodles/hundred-poems/",
+          "live": "https://lifeanddoodles.github.io/hundred-poems/"
+        },
+        "client": null,
+        "creativeItemType": "WebSite",
+        "technologies": ["React", "HTML", "CSS"],
+        "tags": ["App Development", "Web Development"]
+      }
+    ],
+    "callsToAction": {
+      "main": "View project",
+      "secondary": "View code"
+    }
+  },
+  "about": {
+    "title": "About",
+    "description": "<paragraph_tag>I have 12+ years of experience working with <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2> and JavaScript. Most of that time, I have worked with small digital agencies in the US.</paragraph_tag><paragraph_tag>Although I am looking for projects in the React ecosystem, I am willing to learn and work with other technologies (I am a dabbler in the <abbreviation_tag_3>MERN</abbreviation_tag_3> and <abbreviation_tag_4>PERN</abbreviation_tag_4> stacks).</paragraph_tag>"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "items": [
+      {
+        "id": "react",
+        "name": "React",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "css-in-js",
+        "name": "CSS-in-JS",
+        "description": "Mainly Styled components, but I've also used Emotion CSS and libraries like <external_anchor_tag>Styled System</external_anchor_tag>(https://styled-system.com/)."
+      },
+      {
+        "id": "redux",
+        "name": "Redux",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "typescript",
+        "name": "TypeScript",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "accessibility",
+        "name": "Accesibilidad",
+        "description": "Adhere to <acronym_tag>WCAG</acronym_tag> principles, add relevant ARIA attributes to improve accessibility"
+      },
+      {
+        "id": "schema-markup",
+        "name": "Schema markup",
+        "description": "Use structured data in applicable elements to improve search engine results by making the content more understandable."
+      },
+      {
+        "id": "html",
+        "name": "HTML5",
+        "description": "Use semantic elements."
+      },
+      {
+        "id": "css",
+        "name": "CSS3",
+        "description": "Use modern CSS techniques to style webpages and applications."
+      },
+      {
+        "id": "sass",
+        "name": "SASS",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "javascript",
+        "name": "JavaScript (ES6+)",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "git",
+        "name": "Git",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "npm",
+        "name": "NPM",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "slack",
+        "name": "Slack",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "jira",
+        "name": "JIRA",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "node",
+        "name": "Node.js",
+        "description": "Lorem_ipsum_dolor"
+      },
+      {
+        "id": "express",
+        "name": "Express.js",
+        "description": "Lorem_ipsum_dolor"
+      }
+    ],
+    "proficiencyDescription": {
+      "beginner": "I'm familiar with these technologies, mainly following tutorials and courses, since I wanted to learn more about them.",
+      "medium": "I've used these technologies in personal projects, not professionally, but I'm confident that I can solve issues I might encounter with them.",
+      "advanced": "I've either used these technologies professionally (in a freelance project or a full-time job) or I'm fairly familiar with them."
+    }
+  },
+  "languages": {
+    "title": "Idiomas",
+    "description": "I know the following languages:",
+    "items": "Español (Natal), Inglés (Avanzado)",
+    "note": "I am currently studying Japanese and French, and as a language learner I am really interested in <abbreviation_tag>i18n</abbreviation_tag>, and how different languages impact an application's layout and overall UI/UX."
+  },
+  "contact": {
+    "title": "Contactar",
+    "description": "¿Te gustaría trabajar conmigo en algún proyecto? ¿Tienes alguna duda sobre mi experiencia? Llena el formulario y me pondré en contacto contigo.",
+    "availability": {
+      "available": "I'm currently <available_tag>available</available_tag> for freelance work.",
+      "notAvailable": "I'm currently <not_available_tag>not available</not_available_tag> for freelance work."
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar",
+      "result": {
+        "success": "El mensaje se envió de manera exitosa.",
+        "error": "Algo falló y el mensaje no se pudo enviar."
+      }
+    }
+  },
+  "footer": {
+    "social": {
+      "ariaLabel": "Perfiles de redes sociales",
+      "items": [
+        {
+          "icon": "github",
+          "ariaLabel": "Visita mi perfil de GitHub",
+          "url": "https://github.com/lifeanddoodles"
+        },
+        {
+          "icon": "linkedin",
+          "ariaLabel": "Visita mi perfil de LinkedIn",
+          "url": "https://www.linkedin.com/in/sandralvargas/"
+        }
+      ]
+    },
+    "copyright": "Copyright © {{year}}. Todos los derechos reservados."
   }
 }

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <a className="skip-link screen-reader-text" href="#content">
-        {t('skip-to-content')}
+        {t('skipToContent')}
       </a>
       <Header />
       <div id="content" className="content">

@@ -25,6 +25,13 @@ export enum SkillProficiencyLevel {
   advanced = 'advanced',
 }
 
+export enum SkillCategory {
+  frontend = 'frontend',
+  backend = 'backend',
+  tooling = 'tooling',
+  collaboration = 'collaboration',
+}
+
 export interface Skill {
   icon: string
   name: string
@@ -41,4 +48,9 @@ export interface ContactBody {
   name: string
   email: string
   message: string
+}
+
+export enum AVAILABILITY {
+  AVAILABLE = 'available',
+  NOT_AVAILABLE = 'notAvailable',
 }
