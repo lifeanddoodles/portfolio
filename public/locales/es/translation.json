@@ -1,8 +1,8 @@
 {
-  "skipToContent": "Saltar a contenido",
+  "skipToContent": "Ir al contenido",
   "navMenu": {
     "home": {
-      "label": "Inicio",
+      "label": "Sandra Vargas",
       "url": "/"
     },
     "projects": {
@@ -10,7 +10,7 @@
       "url": "#projects"
     },
     "about": {
-      "label": "Acerca",
+      "label": "Acerca de",
       "url": "#about"
     },
     "skills": {
@@ -28,19 +28,19 @@
   },
   "hero": {
     "title": "Hola, soy <span_tag>Sandra Vargas</span_tag>",
-    "description": "Soy una <span_tag>desarrolladora Front-end</span_tag> con 12+ años de experiencia profesional creando sitios web y 3 trabajando en aplicaciones web. Me gusta optimizar escalabilidad, accesibilidad, y UI/UX en todos mis proyectos.",
+    "description": "Soy una <span_tag>desarrolladora Front-end</span_tag> con 12+ años de experiencia profesional creando sitios web y 3 trabajando en aplicaciones web. Me gusta optimizar la escalabilidad, accesibilidad, y UI/UX en todos mis proyectos.",
     "mainCta": "Trabaja conmigo",
     "secondaryCta": "Ver proyectos anteriores"
   },
   "projects": {
     "title": "Proyectos",
-    "description": "<bold_tag>Proximamente</bold_tag>. Por ahora, puedes ver el <external_anchor_tag>repo de este portafolio</external_anchor_tag> en GitHub, para obtener una idea de cómo me gusta trabajar en mis proyectos.",
+    "description": "<bold_tag>Próximamente</bold_tag>. Mientras tanto, puedes ver el <external_anchor_tag>repo de mi portafolio</external_anchor_tag> en GitHub, para tener una idea de cómo me gusta trabajar en mis proyectos.",
     "items": [
       {
         "id": "001",
-        "title": "100 Poems (WIP)",
-        "subtitle": "React Application",
-        "description": "An application to view the poems from the famous Japanese anthology \"Hyakunin Isshu\" (百人一首) that saves your viewing preferences on the local storage.",
+        "title": "100 Poemas (En proceso)",
+        "subtitle": "Aplicación React",
+        "description": "Una aplicación para ver los poemas de la famosa antología japonesa \"Hyakunin Isshu\" (百人一首) que guarda tus preferencias de visualización en el almacenamiento local.",
         "image": {
           "thumbnail": "/images/twirly-whiskers-thumb.jpg",
           "full": "/images/twirly-whiskers.jpg"
@@ -57,7 +57,7 @@
       {
         "id": "002",
         "title": "Fullstack",
-        "subtitle": "React Fullstack Application",
+        "subtitle": "Aplicación React Fullstack",
         "description": "Lorem ipsum dolor",
         "image": {
           "thumbnail": "/images/twirly-whiskers-thumb.jpg",
@@ -74,13 +74,13 @@
       }
     ],
     "callsToAction": {
-      "main": "View project",
-      "secondary": "View code"
+      "main": "Ver proyecto",
+      "secondary": "Ver código"
     }
   },
   "about": {
-    "title": "About",
-    "description": "<paragraph_tag>I have 12+ years of experience working with <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2> and JavaScript. Most of that time, I have worked with small digital agencies in the US.</paragraph_tag><paragraph_tag>Although I am looking for projects in the React ecosystem, I am willing to learn and work with other technologies (I am a dabbler in the <abbreviation_tag_3>MERN</abbreviation_tag_3> and <abbreviation_tag_4>PERN</abbreviation_tag_4> stacks).</paragraph_tag>"
+    "title": "Acerca de",
+    "description": "<paragraph_tag>Tengo más de 12 años de experiencia trabajando con <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2> y JavaScript. Durante la mayor parte de ese tiempo, he trabajado con pequeñas agencias digitales en los Estados Unidos.</paragraph_tag><paragraph_tag>Aunque estoy más familiarizada con el ecosistema de React, estoy dispuesta a aprender y trabajar con otras tecnologías (tengo conocimientos básicos en las pilas <abbreviation_tag_3>MERN</abbreviation_tag_3> y <abbreviation_tag_4>PERN</abbreviation_tag_4>).</paragraph_tag>"
   },
   "skills": {
     "title": "Habilidades",
@@ -93,7 +93,7 @@
       {
         "id": "css-in-js",
         "name": "CSS-in-JS",
-        "description": "Mainly Styled components, but I've also used Emotion CSS and libraries like <external_anchor_tag>Styled System</external_anchor_tag>(https://styled-system.com/)."
+        "description": "Principalmente Styled components, pero también he utilizado Emotion CSS y bibliotecas como <external_anchor_tag>Styled System</external_anchor_tag>(https://styled-system.com/)."
       },
       {
         "id": "redux",
@@ -108,22 +108,22 @@
       {
         "id": "accessibility",
         "name": "Accesibilidad",
-        "description": "Adhere to <acronym_tag>WCAG</acronym_tag> principles, add relevant ARIA attributes to improve accessibility"
+        "description": "Seguir los principios de <acronym_tag>WCAG</acronym_tag>, agregar atributos ARIA relevantes para mejorar la accesibilidad."
       },
       {
         "id": "schema-markup",
         "name": "Schema markup",
-        "description": "Use structured data in applicable elements to improve search engine results by making the content more understandable."
+        "description": "Utilizar datos estructurados en elementos aplicables para mejorar los resultados en los motores de búsqueda al hacer que el contenido sea más comprensible."
       },
       {
         "id": "html",
         "name": "HTML5",
-        "description": "Use semantic elements."
+        "description": "Utilizar elementos semánticos."
       },
       {
         "id": "css",
         "name": "CSS3",
-        "description": "Use modern CSS techniques to style webpages and applications."
+        "description": "Utilizar técnicas modernas de CSS para estilizar páginas web y aplicaciones."
       },
       {
         "id": "sass",
@@ -174,16 +174,16 @@
   },
   "languages": {
     "title": "Idiomas",
-    "description": "I know the following languages:",
-    "items": "Español (Natal), Inglés (Avanzado)",
-    "note": "I am currently studying Japanese and French, and as a language learner I am really interested in <abbreviation_tag>i18n</abbreviation_tag>, and how different languages impact an application's layout and overall UI/UX."
+    "description": "Conozco los siguientes idiomas:",
+    "items": "Español (Nativo), Inglés (Avanzado)",
+    "note": "Actualmente estoy estudiando japonés y francés, y como estudiante de idiomas, me interesa mucho la <abbreviation_tag>i18n</abbreviation_tag> (internacionalización) y cómo los diferentes idiomas impactan el diseño y la experiencia de usuario en una aplicación."
   },
   "contact": {
     "title": "Contactar",
-    "description": "¿Te gustaría trabajar conmigo en algún proyecto? ¿Tienes alguna duda sobre mi experiencia? Llena el formulario y me pondré en contacto contigo.",
+    "description": "¿Quieres trabajar juntos en un proyecto? ¿Tienes alguna pregunta sobre mi experiencia? Completa el formulario de contacto y te responderé a la brevedad.",
     "availability": {
-      "available": "I'm currently <available_tag>available</available_tag> for freelance work.",
-      "notAvailable": "I'm currently <not_available_tag>not available</not_available_tag> for freelance work."
+      "available": "Actualmente estoy <available_tag>disponible</available_tag> para trabajo freelance.",
+      "notAvailable": "Actualmente estoy <not_available_tag>no disponible</not_available_tag> para trabajo freelance."
     },
     "form": {
       "name": "Nombre",
@@ -191,8 +191,8 @@
       "message": "Mensaje",
       "submit": "Enviar",
       "result": {
-        "success": "El mensaje se envió de manera exitosa.",
-        "error": "Algo falló y el mensaje no se pudo enviar."
+        "success": "Mensaje enviado exitosamente.",
+        "error": "Hubo un problema y no se pudo enviar el mensaje."
       }
     }
   },
