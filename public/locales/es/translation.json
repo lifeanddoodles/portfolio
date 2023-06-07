@@ -142,19 +142,19 @@
         "description": "Lorem_ipsum_dolor"
       },
       "node": {
-        "name": "Node.js",
+        "name": "Node",
         "description": "Lorem_ipsum_dolor"
       },
       "express": {
-        "name": "Express.js",
+        "name": "Express",
         "description": "Lorem_ipsum_dolor"
       },
       "postman": {
         "name": "Postman",
         "description": "Lorem_ipsum_dolor"
       },
-      "postgres": {
-        "name": "Postgres",
+      "postgresql": {
+        "name": "PostgreSQL",
         "description": "Lorem_ipsum_dolor"
       },
       "mongodb": {

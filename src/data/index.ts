@@ -132,7 +132,7 @@ export const skills = [
     proficiencyLevel: SkillProficiencyLevel.beginner,
   },
   {
-    id: 'postgres',
+    id: 'postgresql',
     categories: [SkillCategory.backend],
     proficiencyLevel: SkillProficiencyLevel.beginner,
   },
