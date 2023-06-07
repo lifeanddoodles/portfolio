@@ -33,8 +33,7 @@ export enum SkillCategory {
 }
 
 export interface Skill {
-  icon: string
-  name: string
+  id: string
   categories: string[]
   proficiencyLevel: keyof typeof SkillProficiencyLevel
 }

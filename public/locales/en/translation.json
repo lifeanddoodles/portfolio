@@ -84,92 +84,88 @@
   },
   "skills": {
     "title": "Skills",
-    "items": [
-      {
-        "id": "react",
+    "items": {
+      "react": {
         "name": "React",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "css-in-js",
+      "css-in-js": {
         "name": "CSS-in-JS",
         "description": "Mainly Styled components, but I've also used Emotion CSS and libraries like <external_anchor_tag>Styled System</external_anchor_tag>(https://styled-system.com/)."
       },
-      {
-        "id": "redux",
+      "redux": {
         "name": "Redux",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "typescript",
+      "typescript": {
         "name": "TypeScript",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "accessibility",
+      "accessibility": {
         "name": "Accessibility",
         "description": "Adhere to <acronym_tag>WCAG</acronym_tag> principles, add relevant ARIA attributes to improve accessibility."
       },
-      {
-        "id": "schema-markup",
+      "schema-markup": {
         "name": "Schema markup",
         "description": "Use structured data in applicable elements to improve search engine results by making the content more understandable."
       },
-      {
-        "id": "html",
+      "html": {
         "name": "HTML5",
         "description": "Use semantic elements."
       },
-      {
-        "id": "css",
+      "css": {
         "name": "CSS3",
         "description": "Use modern CSS techniques to style webpages and applications."
       },
-      {
-        "id": "sass",
+      "sass": {
         "name": "SASS",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "javascript",
+      "javascript": {
         "name": "JavaScript (ES6+)",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "git",
+      "git": {
         "name": "Git",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "npm",
+      "npm": {
         "name": "NPM",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "slack",
+      "slack": {
         "name": "Slack",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "jira",
+      "jira": {
         "name": "JIRA",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "node",
+      "node": {
         "name": "Node.js",
         "description": "Lorem_ipsum_dolor"
       },
-      {
-        "id": "express",
+      "express": {
         "name": "Express.js",
         "description": "Lorem_ipsum_dolor"
+      },
+      "postman": {
+        "name": "Postman",
+        "description": "Lorem_ipsum_dolor"
+      },
+      "postgres": {
+        "name": "Postgres",
+        "description": "Lorem_ipsum_dolor"
+      },
+      "mongodb": {
+        "name": "MongoDB",
+        "description": "Lorem_ipsum_dolor"
       }
-    ],
+    },
     "proficiencyDescription": {
-      "beginner": "I'm familiar with these technologies, mainly following tutorials and courses, since I wanted to learn more about them.",
-      "medium": "I've used these technologies in personal projects, not professionally, but I'm confident that I can solve issues I might encounter with them.",
-      "advanced": "I've either used these technologies professionally (in a freelance project or a full-time job) or I'm fairly familiar with them."
+      "beginner": "Although it's not my main focus, I'm familiar with these technologies, mainly by following tutorials and courses I purchased since I wanted to learn more about them.",
+      "medium": "I am highly interested in these technologies and I actively use them in personal projects. I'm confident that I can solve issues I might encounter with them.",
+      "advanced": "I've used these technologies professionally, either in a freelance project or at a full-time job."
     }
   },
   "languages": {

@@ -59,7 +59,7 @@ export const skills = [
   {
     id: 'redux',
     categories: [SkillCategory.frontend],
-    proficiencyLevel: SkillProficiencyLevel.medium,
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     id: 'typescript',
@@ -99,22 +99,22 @@ export const skills = [
   {
     id: 'git',
     categories: [SkillCategory.tooling],
-    proficiencyLevel: SkillProficiencyLevel.medium,
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     id: 'npm',
     categories: [SkillCategory.tooling],
-    proficiencyLevel: SkillProficiencyLevel.medium,
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     id: 'slack',
     categories: [SkillCategory.collaboration],
-    proficiencyLevel: SkillProficiencyLevel.medium,
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     id: 'jira',
     categories: [SkillCategory.collaboration],
-    proficiencyLevel: SkillProficiencyLevel.medium,
+    proficiencyLevel: SkillProficiencyLevel.advanced,
   },
   {
     id: 'node',
@@ -123,6 +123,21 @@ export const skills = [
   },
   {
     id: 'express',
+    categories: [SkillCategory.backend],
+    proficiencyLevel: SkillProficiencyLevel.beginner,
+  },
+  {
+    id: 'postman',
+    categories: [SkillCategory.backend],
+    proficiencyLevel: SkillProficiencyLevel.beginner,
+  },
+  {
+    id: 'postgres',
+    categories: [SkillCategory.backend],
+    proficiencyLevel: SkillProficiencyLevel.beginner,
+  },
+  {
+    id: 'mongodb',
     categories: [SkillCategory.backend],
     proficiencyLevel: SkillProficiencyLevel.beginner,
   },
