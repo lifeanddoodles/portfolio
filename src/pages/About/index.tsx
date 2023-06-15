@@ -22,8 +22,11 @@ const About = () => {
           ),
           abbreviation_tag_1: <abbr title="HyperText Markup Language" />,
           abbreviation_tag_2: <abbr title="Cascading Style Sheets" />,
-          abbreviation_tag_3: <abbr title="MongoDB, Express, React, Node" />,
-          abbreviation_tag_4: (
+          abbreviation_tag_3: (
+            <abbr title="Syntactically Awesome Style Sheets" />
+          ),
+          abbreviation_tag_4: <abbr title="MongoDB, Express, React, Node" />,
+          abbreviation_tag_5: (
             <abbr title="PostgreSQL, Express, React, and Node" />
           ),
         }}

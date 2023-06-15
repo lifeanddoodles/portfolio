@@ -80,7 +80,7 @@
   },
   "about": {
     "title": "About",
-    "description": "<paragraph_tag>I have 12+ years of experience working with <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2> and JavaScript. Most of that time, I have worked with small digital agencies in the US.</paragraph_tag><paragraph_tag>Although I am most familiar with the React ecosystem, I am willing to learn and work with other technologies (I am a dabbler in the <abbreviation_tag_3>MERN</abbreviation_tag_3> and <abbreviation_tag_4>PERN</abbreviation_tag_4> stacks).</paragraph_tag>"
+    "description": "<paragraph_tag>I have 12+ years of experience creating websites using things like <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2>, <abbreviation_tag_3>Sass</abbreviation_tag_3>, JavaScript, Grunt, Gulp, WordPress, Git, and more. These projects were with small digital agencies in the US.</paragraph_tag><paragraph_tag>For the last 3 years I've officially switched to working with web applications, and although I am most familiar with the React ecosystem, I am willing to learn and work with other technologies (I am a dabbler in the <abbreviation_tag_4>MERN</abbreviation_tag_4> and <abbreviation_tag_5>PERN</abbreviation_tag_5> stacks).</paragraph_tag>"
   },
   "skills": {
     "title": "Skills",

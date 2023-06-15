@@ -80,7 +80,7 @@
   },
   "about": {
     "title": "Acerca de",
-    "description": "<paragraph_tag>Tengo más de 12 años de experiencia trabajando con <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2> y JavaScript. Durante la mayor parte de ese tiempo, he trabajado con pequeñas agencias digitales en los Estados Unidos.</paragraph_tag><paragraph_tag>Aunque estoy más familiarizada con el ecosistema de React, estoy dispuesta a aprender y trabajar con otras tecnologías (tengo conocimientos básicos en las pilas <abbreviation_tag_3>MERN</abbreviation_tag_3> y <abbreviation_tag_4>PERN</abbreviation_tag_4>).</paragraph_tag>"
+    "description": "<paragraph_tag>Tengo más de 12 años de experiencia creando sitios web utilizando cosas como <abbreviation_tag_1>HTML</abbreviation_tag_1>, <abbreviation_tag_2>CSS</abbreviation_tag_2>, <abbreviation_tag_3>Sass</abbreviation_tag_3>, JavaScript, Grunt, Gulp, WordPress, Git, y más. Estos proyectos fueron con pequeñas agencias digitales en los Estados Unidos.</paragraph_tag><paragraph_tag>Durante los últimos 3 años hice el cambio oficialmente a trabajar con aplicaciones web, y aunque estoy más familiarizada con el ecosistema de React, estoy dispuesta a aprender y trabajar con otras tecnologías (tengo conocimientos básicos en las pilas <abbreviation_tag_4>MERN</abbreviation_tag_4> y <abbreviation_tag_5>PERN</abbreviation_tag_5>).</paragraph_tag>"
   },
   "skills": {
     "title": "Habilidades",

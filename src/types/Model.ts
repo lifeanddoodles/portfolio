@@ -1,3 +1,5 @@
+import { DefaultTFuncReturn } from 'i18next'
+
 export interface Project {
   id: string
   title: string
@@ -52,4 +54,18 @@ export interface ContactBody {
 export enum AVAILABILITY {
   AVAILABLE = 'available',
   NOT_AVAILABLE = 'notAvailable',
+}
+
+export interface OptionProps {
+  label: string | DefaultTFuncReturn
+  value: string | number
+  ariaLabel?: string
+}
+
+export interface SelectProps {
+  label?: string
+  options: OptionProps[]
+  value: string | number
+  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void
+  disabled?: boolean
 }
