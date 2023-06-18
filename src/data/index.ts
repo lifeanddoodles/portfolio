@@ -2,13 +2,22 @@ import { SkillCategory, SkillProficiencyLevel } from '../types/Model'
 
 export const projects = [
   {
-    id: '001',
-    title: 'Nonprofit Website',
-    subtitle: 'WordPress Theme & Plugin',
-    description: {
-      short:
-        'Designed and developed a theme based on their requirements and feedback, added extra functionality through Gutenberg blocks enabled through a plugin.',
+    id: '000',
+    image: {
+      thumbnail: '/images/twirly-whiskers-thumb.jpg',
+      full: '/images/twirly-whiskers.jpg',
     },
+    url: {
+      code: 'https://github.com/lifeanddoodles/hundred-poems/',
+      live: 'https://lifeanddoodles.github.io/hundred-poems/',
+    },
+    client: null,
+    creativeItemType: 'WebSite',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'i18next'],
+    tags: ['App Development', 'Web Development'],
+  },
+  {
+    id: '001',
     image: {
       thumbnail: '../assets/images/portfolio/alex-dvm-thumb.jpg',
       full: '../assets/images/portfolio/alex-dvm.jpg',
@@ -24,12 +33,6 @@ export const projects = [
   },
   {
     id: '002',
-    title: '100 Poems (WIP)',
-    subtitle: 'React Application',
-    description: {
-      short:
-        'An application to view the poems from the famous Japanese anthology "Hyakunin Isshu" (百人一首) that saves your viewing preferences on the local storage.',
-    },
     image: {
       thumbnail: '/images/twirly-whiskers-thumb.jpg',
       full: '/images/twirly-whiskers.jpg',

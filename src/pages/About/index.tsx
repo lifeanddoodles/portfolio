@@ -46,7 +46,7 @@ const About = () => {
         >
           {t('languages.items', { returnObject: true })
             .split(', ')
-            .map((item, index) => (
+            .map((item: string, index: number) => (
               <li key={index} className="p-2 sm:w-1/2">
                 <span className="title-font font-medium text-white">
                   {item}

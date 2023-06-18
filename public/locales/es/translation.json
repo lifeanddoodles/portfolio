@@ -37,40 +37,22 @@
     "description": "<bold_tag>Próximamente</bold_tag>. Mientras tanto, puedes ver el <external_anchor_tag>repo de mi portafolio</external_anchor_tag> en GitHub, para tener una idea de cómo me gusta trabajar en mis proyectos.",
     "items": [
       {
+        "id": "000",
+        "title": "Portafolio",
+        "subtitle": "Aplicación React",
+        "description": "<bold_tag>Próximamente</bold_tag>. Mientras tanto, puedes ver el <external_anchor_tag>repo de mi portafolio</external_anchor_tag> en GitHub, para tener una idea de cómo me gusta trabajar en mis proyectos."
+      },
+      {
         "id": "001",
         "title": "100 Poemas (En proceso)",
         "subtitle": "Aplicación React",
-        "description": "Una aplicación para ver los poemas de la famosa antología japonesa \"Hyakunin Isshu\" (百人一首) que guarda tus preferencias de visualización en el almacenamiento local.",
-        "image": {
-          "thumbnail": "/images/twirly-whiskers-thumb.jpg",
-          "full": "/images/twirly-whiskers.jpg"
-        },
-        "url": {
-          "code": "https://github.com/lifeanddoodles/hundred-poems/",
-          "live": "https://lifeanddoodles.github.io/hundred-poems/"
-        },
-        "client": null,
-        "creativeItemType": "WebSite",
-        "technologies": ["React", "HTML", "CSS"],
-        "tags": ["App Development", "Web Development"]
+        "description": "Una aplicación para ver los poemas de la famosa antología japonesa \"Hyakunin Isshu\" (百人一首) que guarda tus preferencias de visualización en el almacenamiento local."
       },
       {
         "id": "002",
         "title": "Fullstack",
         "subtitle": "Aplicación React Fullstack",
-        "description": "Lorem ipsum dolor",
-        "image": {
-          "thumbnail": "/images/twirly-whiskers-thumb.jpg",
-          "full": "/images/twirly-whiskers.jpg"
-        },
-        "url": {
-          "code": "https://github.com/lifeanddoodles/hundred-poems/",
-          "live": "https://lifeanddoodles.github.io/hundred-poems/"
-        },
-        "client": null,
-        "creativeItemType": "WebSite",
-        "technologies": ["React", "HTML", "CSS"],
-        "tags": ["App Development", "Web Development"]
+        "description": "ES: Lorem ipsum dolor"
       }
     ],
     "callsToAction": {

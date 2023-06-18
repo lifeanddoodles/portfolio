@@ -2,11 +2,6 @@ import { DefaultTFuncReturn } from 'i18next'
 
 export interface Project {
   id: string
-  title: string
-  subtitle: string
-  description: {
-    short: string
-  }
   image: {
     thumbnail: string
     full: string

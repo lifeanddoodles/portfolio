@@ -2,13 +2,16 @@ import i18next from 'i18next'
 import Backend from 'i18next-xhr-backend'
 import { initReactI18next } from 'react-i18next'
 
-console.log(process.env)
-
 const NAMESPACE = 'translation'
+
 export const resources = {
   en: `${process.env.PUBLIC_URL || ''}/locales/en/${NAMESPACE}.json`,
   es: `${process.env.PUBLIC_URL || ''}/locales/es/${NAMESPACE}.json`,
 }
+
+export const defaultNS = `${
+  process.env.PUBLIC_URL || ''
+}/locales/en/${NAMESPACE}.json`
 
 i18next.on('languageChanged', function (lng) {
   localStorage.setItem('lng', lng)
