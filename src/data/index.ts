@@ -1,48 +1,52 @@
-import { SkillCategory, SkillProficiencyLevel } from '../types/Model'
+import {
+  CreativeWorkType,
+  SkillCategory,
+  SkillProficiencyLevel,
+} from '../types/Model'
 
 export const projects = [
   {
     id: '000',
     image: {
-      thumbnail: '/images/twirly-whiskers-thumb.jpg',
-      full: '/images/twirly-whiskers.jpg',
+      thumbnail: '',
+      full: '',
     },
     url: {
-      code: 'https://github.com/lifeanddoodles/hundred-poems/',
-      live: 'https://lifeanddoodles.github.io/hundred-poems/',
+      code: 'https://github.com/lifeanddoodles/portfolio',
+      live: '',
     },
     client: null,
-    creativeItemType: 'WebSite',
+    creativeItemType: CreativeWorkType.WEB_SITE,
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'i18next'],
     tags: ['App Development', 'Web Development'],
   },
   {
     id: '001',
     image: {
-      thumbnail: '../assets/images/portfolio/alex-dvm-thumb.jpg',
-      full: '../assets/images/portfolio/alex-dvm.jpg',
+      thumbnail: '',
+      full: '',
     },
     url: {
       code: '',
       live: 'https://client.lifeanddoodles.com/soundshq/',
     },
     client: null,
-    creativeItemType: 'WebSite',
+    creativeItemType: CreativeWorkType.WEB_SITE,
     technologies: ['WordPress', 'HTML', 'CSS'],
     tags: ['Web Development', 'Theme Development', 'Plugin Development'],
   },
   {
     id: '002',
     image: {
-      thumbnail: '/images/twirly-whiskers-thumb.jpg',
-      full: '/images/twirly-whiskers.jpg',
+      thumbnail: '',
+      full: '',
     },
     url: {
       code: 'https://github.com/lifeanddoodles/hundred-poems/',
       live: 'https://lifeanddoodles.github.io/hundred-poems/',
     },
     client: null,
-    creativeItemType: 'WebSite',
+    creativeItemType: CreativeWorkType.SOFTWARE_APPLICATION,
     technologies: ['React', 'HTML', 'CSS'],
     tags: ['App Development', 'Web Development'],
   },

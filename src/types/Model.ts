@@ -16,6 +16,15 @@ export interface Project {
   tags?: string[]
 }
 
+export enum CreativeWorkType {
+  SOFTWARE_APPLICATION = 'SoftwareApplication',
+  SOFTWARE_SOURCE_CODE = 'SoftwareSourceCode',
+  WEB_CONTENT = 'WebContent',
+  WEB_PAGE = 'WebPage',
+  WEB_PAGE_ELEMENT = 'WebPageElement',
+  WEB_SITE = 'WebSite',
+}
+
 export enum SkillProficiencyLevel {
   beginner = 'beginner',
   medium = 'medium',
