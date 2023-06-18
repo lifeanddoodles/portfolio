@@ -23,7 +23,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
     <article
       itemScope
       itemType={`https://schema.org/${project.creativeItemType}`}
-      className="sm:w-1/2 w-100 p-4"
+      className="w-100 sm:w-1/2 p-4 mx-auto"
     >
       {title && (
         <h3
@@ -38,17 +38,15 @@ const ProjectItem = ({ project }: { project: Project }) => {
           {subtitle}
         </h4>
       )}
-      {/* <img
-          src={project.image.full}
-          alt={project.title}
-          itemProp="image"
-        /> */}
+      {project.image.thumbnail && (
+        <img src={project.image.thumbnail} alt="" itemProp="image" />
+      )}
       {project?.technologies && (
-        <div className="flex flex-wrap my-2">
+        <div className="flex flex-wrap my-2 justify-center">
           {project?.technologies.map((technology) => (
             <span
               key={technology}
-              className="mx-1 px-3 py-1 text-gray-400 bg-gray-800 text-sm font-small rounded-full"
+              className="m-1 px-3 py-1 text-gray-400 bg-gray-800 text-sm font-small rounded-full"
             >
               {technology}
             </span>
@@ -56,7 +54,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
         </div>
       )}
       {description && (
-        <p itemProp="description" className="leading-relaxed mb-4">
+        <p itemProp="description" className="leading-relaxed mb-4 lg:max-w-xl">
           <Trans
             i18nKey={description}
             components={{
@@ -112,7 +110,7 @@ const Projects = () => {
       <h2 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
         {t('title')}
       </h2>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4">
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-8">
         <Trans
           i18nKey={'projects.description'}
           components={{
@@ -124,7 +122,7 @@ const Projects = () => {
         />
       </p>
       {projects.length > 0 && (
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4 lg:max-w-xxl">
           {projects?.map((project: Project) => {
             return <ProjectItem project={project} key={project.id} />
           })}

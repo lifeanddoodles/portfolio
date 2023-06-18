@@ -18,7 +18,7 @@ const About = () => {
         i18nKey="about.description"
         components={{
           paragraph_tag: (
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4" />
+            <p className="text-base leading-relaxed xl:w-2/4 lg:max-w-xl mx-auto mb-4 text-left" />
           ),
           abbreviation_tag_1: <abbr title="HyperText Markup Language" />,
           abbreviation_tag_2: <abbr title="Cascading Style Sheets" />,
@@ -40,14 +40,14 @@ const About = () => {
         <ul
           itemProp="knowsLanguage"
           id="languages"
-          className="flex flex-wrap mb-4 lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"
+          className="flex flex-wrap mb-4 lg:max-w-lg lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"
           // eslint-disable-next-line react/no-unknown-property
           i18nIsDynamicList
         >
           {t('languages.items', { returnObject: true })
             .split(', ')
             .map((item: string, index: number) => (
-              <li key={index} className="p-2 sm:w-1/2">
+              <li key={index} className="p-2 sm:w-1/2 w-full">
                 <span className="title-font font-medium text-white">
                   {item}
                 </span>
@@ -55,7 +55,7 @@ const About = () => {
             ))}
         </ul>
       </Trans>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-4">
+      <p className="text-base leading-relaxed xl:w-2/4 lg:max-w-xl lg:w-3/4 mx-auto mb-4">
         <Trans
           i18nKey="languages.note"
           components={{

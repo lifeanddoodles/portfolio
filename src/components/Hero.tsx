@@ -29,15 +29,15 @@ const Hero = () => {
             }}
           />
         </p>
-        <div className="flex justify-center">
+        <div className="flex justify-center gap-4 flex-col sm:flex-row">
           <NativeLink
             url="#contact"
-            className="inline-flex text-white bg-green-700 border-0 py-2 px-6 hover:bg-green-600 rounded text-lg mb-4"
+            className="inline-flex text-white bg-green-700 border-0 py-2 px-6 hover:bg-green-600 rounded text-lg mb-4 text-center"
             label={t('hero.mainCta')}
           />
           <NativeLink
             url="#projects"
-            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4"
+            className="inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4 text-center"
             label={t('hero.secondaryCta')}
           />
         </div>
