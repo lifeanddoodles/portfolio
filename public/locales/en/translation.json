@@ -40,7 +40,7 @@
         "id": "000",
         "title": "Portfolio",
         "subtitle": "React Application",
-        "description": "<bold_tag>Coming soon</bold_tag>. In the meantime, you can take a look at this <external_anchor_tag>portfolio's repo</external_anchor_tag> on GitHub, to get an idea of how I like to work on my projects."
+        "description": "Portfolio based in a tutorial to learn how to use Tailwind CSS with React. I added TypeScript and the libraries i18next and react-i18next."
       },
       {
         "id": "001",
