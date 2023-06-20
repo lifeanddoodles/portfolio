@@ -23,8 +23,8 @@
     }
   },
   "languageSwitcher": {
-    "en": "English",
-    "es": "Español"
+    "label": "Cambiar idioma",
+    "options": { "en": "English", "es": "Español" }
   },
   "hero": {
     "title": "Hola, soy <span_tag>Sandra Vargas</span_tag>",

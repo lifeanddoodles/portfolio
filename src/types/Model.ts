@@ -70,6 +70,6 @@ export interface SelectProps {
   label?: string
   options: OptionProps[]
   value: string | number
-  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void
+  onChange: (event: string) => void
   disabled?: boolean
 }

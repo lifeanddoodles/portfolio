@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { ChangeEvent, Fragment } from 'react'
 import { OptionProps, SelectProps } from '../types/Model'
 import Group from './Group'
 
@@ -7,17 +7,24 @@ const Option = ({ label, value }: OptionProps) => {
 }
 
 const Select = ({ label, options, value, onChange, disabled }: SelectProps) => {
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    onChange(event)
+  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    onChange(event?.target?.value)
   }
 
-  const SelectWrapper = label ? Group : Fragment
+  const SelectWrapper = label
+    ? { component: Group, props: { className: 'flex items-center gap-2' } }
+    : { component: Fragment, props: {} }
 
   return (
-    <SelectWrapper>
+    <SelectWrapper.component {...SelectWrapper.props}>
       {label && <label>{label}</label>}
       <div>
-        <select value={value} onChange={handleChange} disabled={disabled}>
+        <select
+          value={value}
+          onChange={(e) => handleChange(e)}
+          disabled={disabled}
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 pr-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        >
           {options.map((option) => (
             <Option
               label={option.label}
@@ -26,9 +33,8 @@ const Select = ({ label, options, value, onChange, disabled }: SelectProps) => {
             />
           ))}
         </select>
-        <span className="focus"></span>
       </div>
-    </SelectWrapper>
+    </SelectWrapper.component>
   )
 }
 

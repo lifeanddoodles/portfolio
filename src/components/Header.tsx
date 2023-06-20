@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Navbar } from './Navbar'
+import Select from './Select'
 
 export const Header = () => {
   const { t, i18n } = useTranslation()
@@ -18,8 +19,8 @@ export const Header = () => {
 
   return (
     <header id="site-header" className="bg-gray-800 md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <h1 className="title-font font-medium text-white mb-4 md:mb-0 ml-3 text-xl">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center gap-5">
+        <h1 className="title-font font-medium text-white mb-4 md:mb-0 text-xl">
           <Link to="/" rel="home" className="ml-3 text-xl">
             {t('navMenu.home.label')}
           </Link>
@@ -27,22 +28,19 @@ export const Header = () => {
         <Navbar />
         <a
           href="#contact"
-          className="inline-flex items-center text-white bg-red-600 border-0 py-1 px-3 hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          className="md:mr-auto inline-flex items-center text-white bg-red-600 border-0 py-1 px-3 hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
         >
           {t('navMenu.contact.label')}
         </a>
-        <button
-          type="button"
-          onClick={() => {
-            changeLanguage('es')
-          }}
-        >
-          {t('languageSwitcher.es')}
-        </button>
-
-        <button type="button" onClick={() => changeLanguage('en')}>
-          {t('languageSwitcher.en')}
-        </button>
+        <Select
+          label={t('languageSwitcher.label')}
+          value={i18n.language}
+          options={[
+            { label: t('languageSwitcher.options.es'), value: 'es' },
+            { label: t('languageSwitcher.options.en'), value: 'en' },
+          ]}
+          onChange={changeLanguage}
+        />
       </div>
     </header>
   )
