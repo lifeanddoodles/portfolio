@@ -20,36 +20,6 @@ export const projects = [
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'i18next'],
     tags: ['App Development', 'Web Development'],
   },
-  {
-    id: '001',
-    image: {
-      thumbnail: '',
-      full: '',
-    },
-    url: {
-      code: '',
-      live: 'https://client.lifeanddoodles.com/soundshq/',
-    },
-    client: null,
-    creativeItemType: CreativeWorkType.WEB_SITE,
-    technologies: ['WordPress', 'HTML', 'CSS'],
-    tags: ['Web Development', 'Theme Development', 'Plugin Development'],
-  },
-  {
-    id: '002',
-    image: {
-      thumbnail: '',
-      full: '',
-    },
-    url: {
-      code: 'https://github.com/lifeanddoodles/hundred-poems/',
-      live: 'https://lifeanddoodles.github.io/hundred-poems/',
-    },
-    client: null,
-    creativeItemType: CreativeWorkType.SOFTWARE_APPLICATION,
-    technologies: ['React', 'HTML', 'CSS'],
-    tags: ['App Development', 'Web Development'],
-  },
 ]
 
 export const skills = [

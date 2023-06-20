@@ -41,18 +41,6 @@
         "title": "Portafolio",
         "subtitle": "Aplicación React",
         "description": "Portafolio basado en un tutorial para aprender a usar Tailwind CSS con React. Agregué TypeScript y las librerías i18next y react-i18next."
-      },
-      {
-        "id": "001",
-        "title": "100 Poemas (En proceso)",
-        "subtitle": "Aplicación React",
-        "description": "Una aplicación para ver los poemas de la famosa antología japonesa \"Hyakunin Isshu\" (百人一首) que guarda tus preferencias de visualización en el almacenamiento local."
-      },
-      {
-        "id": "002",
-        "title": "Fullstack",
-        "subtitle": "Aplicación React Fullstack",
-        "description": "ES: Lorem ipsum dolor"
       }
     ],
     "callsToAction": {
