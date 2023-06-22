@@ -49,6 +49,7 @@ module.exports = {
     path: path.resolve(__dirname, '..', './build'),
     assetModuleFilename: 'images/[name][ext][query]',
     clean: true,
+    publicPath: '/',
   },
   plugins: [
     new HtmlWebpackPlugin({
