@@ -18,12 +18,12 @@
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
     // "baseUrl": "src",
+    "allowSyntheticDefaultImports": true,
     "plugins": [
       {
         "name": "typescript-plugin-css-modules"
       }
     ]
   },
-  "include": ["src/**/*", "src/declarations.d.ts"]
-  // "include": ["src/**/*"]
+  "include": ["src/**/*", "src/declarations.d.ts", "./setupTest.ts"]
 }
