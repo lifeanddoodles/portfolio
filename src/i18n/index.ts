@@ -6,8 +6,12 @@ import { initReactI18next } from 'react-i18next'
 const NAMESPACE = 'translation'
 
 export const resources = {
-  en: `/assets/locales/en/${NAMESPACE}.json`,
-  es: `/assets/locales/es/${NAMESPACE}.json`,
+  en: `${
+    process.env.NODE_ENV === 'production' ? '/assets' : ''
+  }/locales/en/${NAMESPACE}.json`,
+  es: `${
+    process.env.NODE_ENV === 'production' ? '/assets' : ''
+  }/locales/es/${NAMESPACE}.json`,
 }
 
 export const defaultNS = `/assets/locales/en/${NAMESPACE}.json`
@@ -31,8 +35,12 @@ i18next
       backends: [HttpBackend],
       backendOptions: [
         {
-          loadPath: '/assets/locales/{{lng}}/{{ns}}.json',
-          addPath: '/assets/locales/add/{{lng}}/{{ns}}',
+          loadPath: `${
+            process.env.NODE_ENV === 'production' ? '/assets' : ''
+          }/locales/{{lng}}/{{ns}}.json`,
+          addPath: `${
+            process.env.NODE_ENV === 'production' ? '/assets' : ''
+          }/locales/add/{{lng}}/{{ns}}`,
         },
       ],
     },
