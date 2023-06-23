@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { Navbar } from './Navbar'
-import Select from './Select'
+import { Navbar } from '../Navbar'
+import Select from '../Select'
 
 export const Header = () => {
   const { t, i18n } = useTranslation()
@@ -18,7 +18,11 @@ export const Header = () => {
   }
 
   return (
-    <header id="site-header" className="bg-gray-800 md:sticky top-0 z-10">
+    <header
+      id="site-header"
+      data-testid="site-header"
+      className="bg-gray-800 md:sticky top-0 z-10"
+    >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center gap-5">
         <h1 className="title-font font-medium text-white mb-4 md:mb-0 text-xl">
           <Link to="/" rel="home" className="ml-3 text-xl">
