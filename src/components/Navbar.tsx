@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 export const Navbar = () => {
-  const { t } = useTranslation('translation', { keyPrefix: 'navMenu' })
+  const { t } = useTranslation('translation', { keyPrefix: 'header.navMenu' })
 
   return (
     <nav>

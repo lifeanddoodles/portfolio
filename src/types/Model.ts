@@ -71,5 +71,6 @@ export interface SelectProps {
   options: OptionProps[]
   value: string | number
   onChange: (event: string) => void
+  id?: string
   disabled?: boolean
 }

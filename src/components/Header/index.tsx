@@ -4,7 +4,7 @@ import { Navbar } from '../Navbar'
 import Select from '../Select'
 
 export const Header = () => {
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation('translation', { keyPrefix: 'header' })
   /* The names of the translation files that will be used in the component. 
   You can include multiple or just leave it empty and look through all the translation files 
   but its better to just state only the ones you need. */
@@ -37,11 +37,12 @@ export const Header = () => {
           {t('navMenu.contact.label')}
         </a>
         <Select
+          id="changeLanguage"
           label={t('languageSwitcher.label')}
           value={i18n.language}
           options={[
-            { label: t('languageSwitcher.options.es'), value: 'es' },
             { label: t('languageSwitcher.options.en'), value: 'en' },
+            { label: t('languageSwitcher.options.es'), value: 'es' },
           ]}
           onChange={changeLanguage}
         />

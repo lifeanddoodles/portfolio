@@ -6,7 +6,14 @@ const Option = ({ label, value }: OptionProps) => {
   return <option value={value}>{label}</option>
 }
 
-const Select = ({ label, options, value, onChange, disabled }: SelectProps) => {
+const Select = ({
+  label,
+  options,
+  value,
+  onChange,
+  id,
+  disabled,
+}: SelectProps) => {
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     onChange(event?.target?.value)
   }
@@ -17,9 +24,10 @@ const Select = ({ label, options, value, onChange, disabled }: SelectProps) => {
 
   return (
     <SelectWrapper.component {...SelectWrapper.props}>
-      {label && <label>{label}</label>}
+      {label && <label htmlFor={id}>{label}</label>}
       <div>
         <select
+          id={id}
           value={value}
           onChange={(e) => handleChange(e)}
           disabled={disabled}
