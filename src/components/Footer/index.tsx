@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const currentYear = () => {
   return new Date().getFullYear()
@@ -7,7 +7,7 @@ const currentYear = () => {
 
 export const Footer = () => {
   return (
-    <footer className="site-footer text-center pb-10">
+    <footer data-testid="site-footer" className="site-footer text-center pb-10">
       <section
         className="social-footer"
         role="group"
