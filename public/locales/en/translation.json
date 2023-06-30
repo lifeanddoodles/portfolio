@@ -30,7 +30,7 @@
   },
   "hero": {
     "title": "Hi, I'm <span_tag>Sandra Vargas</span_tag>",
-    "description": "I'm a <span_tag>Front-end developer</span_tag> with 12+ years of professional experience creating websites and 3 working with web applications. I am like optimizing scalability, accessibility, and UI/UX in all my projects.",
+    "description": "I'm a <span_tag>Front-end developer</span_tag> with 12+ years of professional experience creating websites and 3 working with web applications. I like optimizing scalability, accessibility, and UI/UX in all my projects.",
     "mainCta": "Work with me",
     "secondaryCta": "See my past work"
   },
