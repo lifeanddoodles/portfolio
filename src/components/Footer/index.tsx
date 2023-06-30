@@ -1,17 +1,20 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Trans, useTranslation } from 'react-i18next'
 
 const currentYear = () => {
   return new Date().getFullYear()
 }
 
 export const Footer = () => {
+  const { t } = useTranslation('translation', { keyPrefix: 'footer' })
+
   return (
     <footer data-testid="site-footer" className="site-footer text-center pb-10">
       <section
         className="social-footer"
         role="group"
-        aria-label="Social media profiles"
+        aria-label={t('social.ariaLabel')}
         id="social"
       >
         <a
@@ -19,7 +22,7 @@ export const Footer = () => {
           href="https://github.com/lifeanddoodles"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Visit GitHub profile"
+          aria-label={t('social.items.github.ariaLabel')}
           itemProp="sameAs"
         >
           <FontAwesomeIcon icon={faGithub} /> Github
@@ -29,13 +32,15 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/sandralvargas/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Visit LinkedIn profile"
+          aria-label={t('social.items.linkedin.ariaLabel')}
           itemProp="sameAs"
         >
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
       </section>
-      <p className="copyright">Copyright {currentYear()}.</p>
+      <p className="copyright">
+        <Trans i18nKey="footer.copyright" values={{ year: currentYear() }} />
+      </p>
     </footer>
   )
 }

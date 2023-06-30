@@ -167,19 +167,15 @@
   "footer": {
     "social": {
       "ariaLabel": "Social media profiles",
-      "items": [
-        {
-          "icon": "github",
-          "ariaLabel": "Visit my GitHub profile",
-          "url": "https://github.com/lifeanddoodles"
+      "items": {
+        "github": {
+          "ariaLabel": "Visit my GitHub profile"
         },
-        {
-          "icon": "linkedin",
-          "ariaLabel": "Visit my LinkedIn profile",
-          "url": "https://www.linkedin.com/in/sandralvargas/"
+        "linkedin": {
+          "ariaLabel": "Visit my LinkedIn profile"
         }
-      ]
+      }
     },
-    "copyright": "Copyright © {{year}}. All rights reserved."
+    "copyright": "Copyright © {{year}}."
   }
 }
