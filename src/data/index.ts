@@ -44,6 +44,11 @@ export const skills = [
     proficiencyLevel: SkillProficiencyLevel.medium,
   },
   {
+    id: 'jest',
+    categories: [SkillCategory.frontend, SkillCategory.backend],
+    proficiencyLevel: SkillProficiencyLevel.medium,
+  },
+  {
     id: 'accessibility',
     categories: [SkillCategory.frontend],
     proficiencyLevel: SkillProficiencyLevel.advanced,

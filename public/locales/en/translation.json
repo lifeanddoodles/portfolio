@@ -73,6 +73,10 @@
         "name": "TypeScript",
         "description": "Lorem_ipsum_dolor"
       },
+      "jest": {
+        "name": "Jest",
+        "description": "Lorem_ipsum_dolor"
+      },
       "accessibility": {
         "name": "Accessibility",
         "description": "Adhere to <acronym_tag>WCAG</acronym_tag> principles, add relevant ARIA attributes to improve accessibility."
