@@ -1,9 +1,10 @@
 import { UserIcon } from '@heroicons/react/24/solid'
 import { Trans, useTranslation } from 'react-i18next'
 import Skills from './Skills'
+import SoftSkills from './SoftSkills'
 
 const About = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('translation', { keyPrefix: 'about' })
 
   return (
     <section
@@ -12,7 +13,7 @@ const About = () => {
     >
       <UserIcon className="mx-auto inline-block w-10 mb-4" />
       <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-        {t('about.title')}
+        {t('title')}
       </h2>
       <Trans
         i18nKey="about.description"
@@ -32,37 +33,7 @@ const About = () => {
         }}
       />
       <Skills />
-      <h4 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">
-        {t('languages.title')}
-      </h4>
-      <Trans i18nKey="list_map">
-        {t('languages.description')}
-        <ul
-          itemProp="knowsLanguage"
-          id="languages"
-          className="flex flex-wrap mb-4 lg:max-w-lg lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"
-          // eslint-disable-next-line react/no-unknown-property
-          i18nIsDynamicList
-        >
-          {t('languages.items', { returnObject: true })
-            .split(', ')
-            .map((item: string, index: number) => (
-              <li key={index} className="p-2 sm:w-1/2 w-full">
-                <span className="title-font font-medium text-white">
-                  {item}
-                </span>
-              </li>
-            ))}
-        </ul>
-      </Trans>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:max-w-xl lg:w-3/4 mx-auto mb-4">
-        <Trans
-          i18nKey="languages.note"
-          components={{
-            abbreviation_tag: <abbr title="Internationalization" />,
-          }}
-        />
-      </p>
+      <SoftSkills />
     </section>
   )
 }

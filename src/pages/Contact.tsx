@@ -24,7 +24,7 @@ const Form = ({
   onSubmit,
   ...rest
 }: FormProps) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('translation', { keyPrefix: 'contact.form' })
 
   return (
     <form
@@ -33,13 +33,9 @@ const Form = ({
       onSubmit={onSubmit}
       className="xl:w-2/4 lg:w-3/4 mx-auto"
     >
-      <h2 className="text-white sm:text-4xl text-3xl mb-4 font-medium title-font">
-        {t('contact.title')}
-      </h2>
-      <p className="leading-relaxed mb-5">{t('contact.description')}</p>
       <div className="relative mb-4">
         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-          {t('contact.form.name')}
+          {t('name')}
         </label>
         <input
           type="text"
@@ -52,7 +48,7 @@ const Form = ({
       </div>
       <div className="relative mb-4">
         <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-          {t('contact.form.email')}
+          {t('email')}
         </label>
         <input
           type="email"
@@ -65,7 +61,7 @@ const Form = ({
       </div>
       <div className="relative mb-4">
         <label htmlFor="message" className="leading-7 text-sm text-gray-400">
-          {t('contact.form.message')}
+          {t('message')}
         </label>
         <textarea
           id="message"
@@ -79,7 +75,7 @@ const Form = ({
         type="submit"
         className="text-white bg-green-700 border-0 py-2 px-6 hover:bg-green-600 rounded text-lg"
       >
-        {t('contact.form.submit')}
+        {t('submit')}
       </button>
     </form>
   )
@@ -89,6 +85,7 @@ const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const { t } = useTranslation('translation', { keyPrefix: 'contact' })
 
   interface dataProps {
     [key: string]: string
@@ -137,6 +134,12 @@ const Contact = () => {
       className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
     >
       <EnvelopeIcon className="mx-auto inline-block w-10 mb-4" />
+      <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+        {t('title')}
+      </h2>
+      <p className="leading-relaxed mb-5 lg:max-w-lg lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        {t('description')}
+      </p>
       <Form
         name={name}
         setName={setName}

@@ -7,7 +7,7 @@ import Contact from './Contact'
 import Projects from './Projects'
 
 const Home = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('translation')
 
   return (
     <>

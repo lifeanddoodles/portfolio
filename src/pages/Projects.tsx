@@ -64,30 +64,36 @@ const ProjectItem = ({ project }: { project: Project }) => {
         </p>
       )}
       {project.client && <p itemProp="sourceOrganization">{project.client}</p>}
-      {project.url.live && (
+      {project.cta.live && (
         <a
-          href={project.url.live}
+          href={project.cta.live}
           itemProp="url"
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4"
+          className="ml-4 inline-flex text-gray-300 bg-gray-700 border-0 py-2 px-6 hover:bg-gray-600 hover:text-white rounded text-lg mb-4"
         >
           {t('callsToAction.main')}
           <ArrowTopRightOnSquareIcon className="inline-block w-4 ml-2" />
         </a>
       )}
-      {project.url.code && (
+      {project.cta.code && (
         <span
           itemScope
           itemType="https://schema.org/SoftwareSourceCode"
           itemProp="subjectOf"
         >
           <a
-            href={project.url.code}
+            href={project.cta.code}
             target="_blank"
             rel="noopener noreferrer"
             itemProp="codeRepository"
-            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4"
+            className={`ml-4 inline-flex text-gray-${
+              !project.cta.live ? '300' : '400'
+            } bg-gray-${
+              !project.cta.live ? '700' : '800'
+            } border-0 py-2 px-6 hover:bg-gray-${
+              !project.cta.live ? '600' : '700'
+            } hover:text-white rounded text-lg mb-4`}
           >
             {t('callsToAction.secondary')}
             <ArrowTopRightOnSquareIcon className="inline-block w-4 ml-2" />

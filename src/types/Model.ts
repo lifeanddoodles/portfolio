@@ -6,9 +6,10 @@ export interface Project {
     thumbnail: string
     full: string
   }
-  url: {
+  cta: {
     code?: string
     live: string
+    caseStudy?: string
   }
   client: string | null
   creativeItemType: string

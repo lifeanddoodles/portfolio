@@ -7,12 +7,12 @@ interface SkillsListProps {
   proficiencyLevel: keyof typeof SkillProficiencyLevel
 }
 const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('translation', { keyPrefix: 'skills' })
 
   return (
     <>
       <p className="text-left mx-auto lg:max-w-xl">
-        {t(`skills.proficiencyDescription.${proficiencyLevel}`)}
+        {t(`proficiencyDescription.${proficiencyLevel}`)}
       </p>
       <ul className="flex flex-wrap mb-10 lg:max-w-xl lg:w-4/5 sm:mx-auto -mx-2 justify-center">
         {skillsData
@@ -23,7 +23,7 @@ const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
             (skill: Skill): JSX.Element => (
               <li key={skill.id} className="p-2 w-full sm:w-1/2 md:w-1/3">
                 <h4 className="title-font font-medium text-white">
-                  {t(`skills.items.${skill.id}.name`)}
+                  {t(`items.${skill.id}.name`)}
                 </h4>
               </li>
             )
@@ -34,12 +34,13 @@ const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
 }
 
 const Skills = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('translation', { keyPrefix: 'skills' })
+
   return (
     <section id="skills" className="my-10">
       <SparklesIcon className="mx-auto inline-block w-10 mb-4" />
       <h3 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-        {t('skills.title')}
+        {t('title')}
       </h3>
       <section itemProp="knowsAbout" id="skills">
         <SkillsList proficiencyLevel={SkillProficiencyLevel.advanced} />

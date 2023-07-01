@@ -3,7 +3,7 @@ import codingImg from '../assets/images/coding.svg'
 import NativeLink from '../components/NativeLink'
 
 const Hero = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('translation')
 
   return (
     <section

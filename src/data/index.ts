@@ -4,6 +4,13 @@ import {
   SkillProficiencyLevel,
 } from '../types/Model'
 
+export const knownLanguages: string[] = ['en', 'es']
+
+export const languagesProficiency: { [key: string]: string } = {
+  en: 'advanced',
+  es: 'native',
+}
+
 export const projects = [
   {
     id: '000',
@@ -11,7 +18,7 @@ export const projects = [
       thumbnail: '',
       full: '',
     },
-    url: {
+    cta: {
       code: 'https://github.com/lifeanddoodles/portfolio',
       live: '',
     },

@@ -59,7 +59,7 @@
     "items": {
       "react": {
         "name": "React",
-        "description": "Lorem_ipsum_dolor"
+        "description": "I've used the Context API, hooks, custom hooks, and more."
       },
       "css-in-js": {
         "name": "CSS-in-JS",
@@ -67,15 +67,15 @@
       },
       "redux": {
         "name": "Redux",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "typescript": {
         "name": "TypeScript",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "jest": {
         "name": "Jest",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "accessibility": {
         "name": "Accessibility",
@@ -87,55 +87,55 @@
       },
       "html": {
         "name": "HTML5",
-        "description": "Use semantic elements."
+        "description": "Use semantic elements, and valid hierarchy in all views and components."
       },
       "css": {
         "name": "CSS3",
-        "description": "Use modern CSS techniques to style webpages and applications."
+        "description": "Use modern and maintainable CSS techniques to style webpages and applications, like logical operators, CSS Flexbox and CSS Grid."
       },
       "sass": {
         "name": "SASS",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "javascript": {
         "name": "JavaScript (ES6+)",
-        "description": "Lorem_ipsum_dolor"
+        "description": "Use modern JavaScript techniques and features to optimize scalability."
       },
       "git": {
         "name": "Git",
-        "description": "Lorem_ipsum_dolor"
+        "description": "I have experience using GitHub, Bitbucket and GitLab."
       },
       "npm": {
         "name": "NPM",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "slack": {
         "name": "Slack",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "jira": {
         "name": "JIRA",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "node": {
         "name": "Node",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "express": {
         "name": "Express",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "postman": {
         "name": "Postman",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "postgresql": {
         "name": "PostgreSQL",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       },
       "mongodb": {
         "name": "MongoDB",
-        "description": "Lorem_ipsum_dolor"
+        "description": ""
       }
     },
     "proficiencyDescription": {
@@ -147,8 +147,16 @@
   "languages": {
     "title": "Languages",
     "description": "I know the following languages:",
-    "items": "Spanish (Native), English (Advanced)",
-    "note": "I am currently studying Japanese and French, and as a language learner I am really interested in <abbreviation_tag>i18n</abbreviation_tag>, and how different languages impact an application's layout and overall UI/UX."
+    "items": "<1></1>",
+    "note": "I am currently studying Japanese and French, and as a language learner I am really interested in <abbreviation_tag>i18n</abbreviation_tag>, and how different languages impact an application's layout and overall UI/UX.",
+    "labels": {
+      "en": "English",
+      "es": "Spanish"
+    },
+    "proficiencyLevels": {
+      "native": "Native",
+      "advanced": "Advanced"
+    }
   },
   "contact": {
     "title": "Contact me",
