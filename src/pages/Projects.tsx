@@ -9,6 +9,9 @@ import { Project } from '../types/Model'
 
 // const pathToAssets = require.context('assets/', false, /\.(png|jpe?g|svg)$/)
 
+/*
+ * TODO: Test that we can get the index of a project
+ */
 const getProjectIndex = (id: string) => {
   return projects.findIndex((p) => p.id === id)
 }
@@ -19,6 +22,11 @@ const ProjectItem = ({ project }: { project: Project }) => {
   const subtitle = t(`items.${getProjectIndex(project.id)}.subtitle`)
   const description = t(`items.${getProjectIndex(project.id)}.description`)
 
+  /*
+   * TODO: Test that we can get the project info rendered correctly.
+   * TODO: Test that external links work.
+   * TODO: Test that the heading levels are correct.
+   */
   return (
     <article
       itemScope
@@ -107,6 +115,10 @@ const ProjectItem = ({ project }: { project: Project }) => {
 const Projects = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'projects' })
 
+  /*
+   * TODO: Test that we can get the section title and description rendered correctly
+   * TODO: Test that we can get the projects rendered correctly
+   */
   return (
     <section
       id="projects"

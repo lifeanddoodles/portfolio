@@ -1,12 +1,12 @@
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import { useTranslation } from 'react-i18next'
-import { skills as skillsData } from '../../data'
-import { Skill, SkillProficiencyLevel } from '../../types/Model'
+import { skills as skillsData } from '../../../data'
+import { Skill, SkillProficiencyLevel } from '../../../types/Model'
 
 interface SkillsListProps {
   proficiencyLevel: keyof typeof SkillProficiencyLevel
 }
-const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
+export const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
   const { t } = useTranslation('translation', { keyPrefix: 'skills' })
 
   return (
@@ -35,6 +35,11 @@ const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
 
 const Skills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'skills' })
+  /*
+   * TODO: Test that we can get the section info rendered correctly.
+   * TODO: Test that the heading levels are correct.
+   * TODO: Test that the skills rendered correctly.
+   */
 
   return (
     <section id="skills" className="my-10">

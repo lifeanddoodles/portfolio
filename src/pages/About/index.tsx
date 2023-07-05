@@ -5,6 +5,11 @@ import SoftSkills from './SoftSkills'
 
 const About = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'about' })
+  /*
+   * TODO: Test that we can get the section info rendered correctly.
+   * TODO: Test that the heading levels are correct.
+   * TODO: Test that the languages rendered correctly.
+   */
 
   return (
     <section

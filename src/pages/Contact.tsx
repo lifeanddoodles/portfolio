@@ -25,6 +25,10 @@ const Form = ({
   ...rest
 }: FormProps) => {
   const { t } = useTranslation('translation', { keyPrefix: 'contact.form' })
+  /*
+   * TODO: Test that the form renders correctly.
+   * TODO: Test that the form submits successfully.
+   */
 
   return (
     <form
@@ -127,6 +131,11 @@ const Contact = () => {
       })
       .catch((error) => alert(error))
   }
+
+  /*
+   * TODO: Test that we can get the section info rendered correctly.
+   * TODO: Test that the heading levels are correct.
+   */
 
   return (
     <section
