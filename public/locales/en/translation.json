@@ -42,7 +42,7 @@
         "id": "000",
         "title": "Portfolio",
         "subtitle": "React Application",
-        "description": "Portfolio based in a tutorial to learn how to use Tailwind CSS with React. I added TypeScript and the libraries i18next and react-i18next."
+        "description": "Portfolio based on a tutorial to learn how to use Tailwind CSS with React. I added TypeScript, internationalization and unit testing."
       }
     ],
     "callsToAction": {
@@ -73,8 +73,12 @@
         "name": "TypeScript",
         "description": ""
       },
-      "jest": {
-        "name": "Jest",
+      "unit-testing": {
+        "name": "Unit testing",
+        "description": "Using Jest and React Testing Library"
+      },
+      "i18n": {
+        "name": "Internationalization",
         "description": ""
       },
       "accessibility": {

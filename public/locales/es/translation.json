@@ -42,7 +42,8 @@
         "id": "000",
         "title": "Portafolio",
         "subtitle": "Aplicación React",
-        "description": "Portafolio basado en un tutorial para aprender a usar Tailwind CSS con React. Agregué TypeScript y las librerías i18next y react-i18next."
+        "description": "Portafolio basado en un tutorial para aprender a usar Tailwind CSS con React. Agregué TypeScript, internacionalización y pruebas unitarias."
+      },
       }
     ],
     "callsToAction": {
@@ -73,8 +74,12 @@
         "name": "TypeScript",
         "description": ""
       },
-      "jest": {
-        "name": "Jest",
+      "unit-testing": {
+        "name": "Pruebas unitarias",
+        "description": "Utilizando Jest y React Testing Library"
+      },
+      "i18n": {
+        "name": "Internacionalización",
         "description": ""
       },
       "accessibility": {

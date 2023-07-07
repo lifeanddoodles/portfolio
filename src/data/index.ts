@@ -24,7 +24,13 @@ export const projects = [
     },
     client: null,
     creativeItemType: CreativeWorkType.WEB_SITE,
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'i18next'],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'i18n',
+      'Unit testing',
+    ],
     tags: ['App Development', 'Web Development'],
   },
 ]
@@ -51,8 +57,13 @@ export const skills = [
     proficiencyLevel: SkillProficiencyLevel.medium,
   },
   {
-    id: 'jest',
+    id: 'unit-testing',
     categories: [SkillCategory.frontend, SkillCategory.backend],
+    proficiencyLevel: SkillProficiencyLevel.medium,
+  },
+  {
+    id: 'i18n',
+    categories: [SkillCategory.frontend],
     proficiencyLevel: SkillProficiencyLevel.medium,
   },
   {
