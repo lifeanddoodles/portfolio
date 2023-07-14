@@ -1,17 +1,15 @@
 import { Trans, useTranslation } from 'react-i18next'
 import { knownLanguages, languagesProficiency } from '../../../data'
+import Heading from '../../../components/Heading'
+import SectionParagraph from '../../../components/Paragraph/SectionParagraph'
 
 const SoftSkills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'languages' })
 
   return (
     <section id="languages" className="my-10">
-      <h4 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">
-        {t('title')}
-      </h4>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:max-w-xl lg:w-3/4 mx-auto mb-4">
-        {t('description')}
-      </p>
+      <Heading level={4} text={t('title')} />
+      <SectionParagraph text={t('description')} />
       <ul
         key="languagesList"
         itemProp="knowsLanguage"
@@ -27,14 +25,16 @@ const SoftSkills = () => {
           </li>
         ))}
       </ul>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:max-w-xl lg:w-3/4 mx-auto mb-4">
-        <Trans
-          i18nKey="languages.note"
-          components={{
-            abbreviation_tag: <abbr title="Internationalization" />,
-          }}
-        />
-      </p>
+      <SectionParagraph
+        text={
+          <Trans
+            i18nKey="languages.note"
+            components={{
+              abbreviation_tag: <abbr title="Internationalization" />,
+            }}
+          />
+        }
+      />
     </section>
   )
 }

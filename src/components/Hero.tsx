@@ -1,6 +1,8 @@
 import { Trans, useTranslation } from 'react-i18next'
 import codingImg from '../assets/images/coding.svg'
 import NativeLink from '../components/NativeLink'
+import Heading from './Heading'
+import Paragraph from './Paragraph'
 
 const Hero = () => {
   const { t } = useTranslation('translation')
@@ -13,22 +15,29 @@ const Hero = () => {
       className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center"
     >
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 className="title-font xl:text-5xl sm:text-4xl text-3xl mb-4 font-medium text-white">
-          <Trans
-            i18nKey="hero.title"
-            components={{
-              span_tag: <span itemProp="name" />,
-            }}
-          />
-        </h1>
-        <p className="xl:text-2xl lg:text-lg mb-8 leading-relaxed">
-          <Trans
-            i18nKey="hero.description"
-            components={{
-              span_tag: <span itemProp="jobTitle" />,
-            }}
-          />
-        </p>
+        <Heading
+          level={1}
+          text={
+            <Trans
+              i18nKey="hero.title"
+              components={{
+                span_tag: <span itemProp="name" />,
+              }}
+            />
+          }
+        />
+        <Paragraph
+          className="xl:text-2xl lg:text-lg"
+          marginBottom={8}
+          text={
+            <Trans
+              i18nKey="hero.description"
+              components={{
+                span_tag: <span itemProp="jobTitle" />,
+              }}
+            />
+          }
+        />
         <div className="flex justify-center gap-4 flex-col sm:flex-row">
           <NativeLink
             url="#contact"

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-// import { ContactBody, Map } from '../types/Model'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
+import Heading from '../components/Heading'
+import SectionParagraph from '../components/Paragraph/SectionParagraph'
 
 interface FormProps {
   name: string
@@ -143,12 +144,8 @@ const Contact = () => {
       className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
     >
       <EnvelopeIcon className="mx-auto inline-block w-10 mb-4" />
-      <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-        {t('title')}
-      </h2>
-      <p className="leading-relaxed mb-5 lg:max-w-lg lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-        {t('description')}
-      </p>
+      <Heading text={t('title')} />
+      <SectionParagraph text={t('description')} />
       <Form
         name={name}
         setName={setName}
