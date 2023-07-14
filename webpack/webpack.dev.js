@@ -6,6 +6,10 @@ module.exports = {
   mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
+    historyApiFallback: true,
+    // static: {
+    //   directory: path.join(__dirname, '..', '/public'),
+    // },
     hot: true,
     open: true,
   },

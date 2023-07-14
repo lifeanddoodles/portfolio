@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { Navbar } from '../Navbar'
-import Select from '../Select'
+import { Navbar } from '../../components/Navbar'
+import Select from '../../components/Select'
 
 export const Header = () => {
   const { t, i18n } = useTranslation('translation', { keyPrefix: 'header' })

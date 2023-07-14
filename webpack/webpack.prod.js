@@ -5,7 +5,15 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: 'public', to: 'assets' }],
+      patterns: [
+        {
+          from: 'public',
+          to: 'assets',
+          globOptions: {
+            ignore: ['**/index.html'],
+          },
+        },
+      ],
     }),
   ],
 }

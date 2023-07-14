@@ -194,5 +194,10 @@
       }
     },
     "copyright": "Copyright © {{year}}."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe.",
+    "goBack": "Ir a la página principal"
   }
 }

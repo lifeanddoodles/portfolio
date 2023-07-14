@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  min-height: 100vh;
+}
+
 .screen-reader-text {
   border-radius: 3px;
   clip: rect(1px, 1px, 1px, 1px);
