@@ -1,5 +1,6 @@
 import { DefaultTFuncReturn } from 'i18next'
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
 export interface ParagraphProps {
   text?: string | DefaultTFuncReturn | React.ReactElement
@@ -19,13 +20,13 @@ const Paragraph = ({
   children,
   ...props
 }: ParagraphProps) => {
+  const mergedClasses = twMerge(
+    `text-${size} leading-relaxed mb-${marginBottom} lg:max-w-xl`,
+    className
+  )
+
   return (
-    <p
-      className={`text-${size} leading-relaxed mb-${marginBottom} lg:max-w-xl
-        ${className ? ` ${className}` : ''}`}
-      itemProp={itemProp}
-      {...props}
-    >
+    <p className={mergedClasses} itemProp={itemProp} {...props}>
       {text || children}
     </p>
   )

@@ -35,16 +35,21 @@ const ProjectItem = ({ project }: { project: Project }) => {
     <article
       itemScope
       itemType={`https://schema.org/${project.creativeItemType}`}
-      className="w-100 sm:w-1/2 p-4 mx-auto"
+      className="w-100 flex-auto md:max-w-sm p-4 bg-gray-800 rounded-lg flex flex-col"
     >
       {title && (
-        <Heading level={3} text={title} itemProp="name" className="text-left" />
+        <Heading
+          level={3}
+          text={title}
+          itemProp="name"
+          className="text-lg mb-2 text-left"
+        />
       )}
       {subtitle && (
         <Heading
           level={4}
           text={subtitle}
-          className="tracking-widest text-left"
+          className="text-sm text-left tracking-widest text-green-400"
         />
       )}
       {project?.image?.thumbnail && (
@@ -55,7 +60,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
           {project?.technologies.map((technology) => (
             <span
               key={technology}
-              className="m-1 px-3 py-1 text-gray-400 bg-gray-800 text-sm font-small rounded-full"
+              className="m-1 px-3 py-1 text-gray-300 bg-gray-700 text-sm font-small rounded-full"
             >
               {technology}
             </span>
@@ -65,7 +70,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
       {description && (
         <Paragraph
           itemProp="description"
-          className="text-left"
+          className="text-left grow"
           text={
             <Trans
               i18nKey={description}
@@ -87,7 +92,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
               itemProp="url"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex text-gray-300 bg-gray-700 border-0 py-2 px-6 hover:bg-gray-600 hover:text-white rounded text-lg mb-4"
+              className="inline-flex text-gray-300 bg-green-700 border-0 py-2 px-6 hover:bg-gray-600 hover:text-white rounded text-lg mb-4"
             >
               {t('callsToAction.main')}
               <ArrowTopRightOnSquareIcon className="inline-block w-4 ml-2" />
@@ -106,8 +111,8 @@ const ProjectItem = ({ project }: { project: Project }) => {
                 itemProp="codeRepository"
                 className={`inline-flex text-gray-${
                   !project.cta.live ? '300' : '400'
-                } bg-gray-${
-                  !project.cta.live ? '700' : '800'
+                } bg-${
+                  !project.cta.live ? 'green-700' : 'gray-700'
                 } border-0 py-2 px-6 hover:bg-gray-${
                   !project.cta.live ? '600' : '700'
                 } hover:text-white rounded text-lg mb-4`}
@@ -152,7 +157,7 @@ const Projects = () => {
         }
       />
       {projects.length > 0 && (
-        <div className="flex flex-wrap -m-4 lg:max-w-xxl">
+        <div className="flex flex-wrap justify-center gap-2 -m-4 lg:max-w-screen-xl">
           {projects?.map((project: Project) => {
             return <ProjectItem project={project} key={project.id} />
           })}

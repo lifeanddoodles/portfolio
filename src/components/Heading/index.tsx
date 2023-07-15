@@ -1,5 +1,6 @@
 import { DefaultTFuncReturn } from 'i18next'
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
 type HeadingComponent = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
@@ -12,22 +13,22 @@ const getHeadingTag = (
     case 'h1':
       return {
         component: 'h1',
-        className: 'text-white xl:text-5xl sm:text-4xl text-3xl',
+        className: 'text-white text-3xl md:text-4xl xl:text-5xl',
       }
     case 'h2':
       return {
         component: 'h2',
-        className: 'text-white sm:text-4xl text-3xl',
+        className: 'text-white text-4xl',
       }
     case 'h3':
       return {
         component: 'h3',
-        className: 'text-white sm:text-3xl text-2xl',
+        className: 'text-white text-2xl',
       }
     case 'h4':
       return {
         component: 'h4',
-        className: 'text-white sm:text-xl text-lg',
+        className: 'text-white text-lg',
       }
     case 'h5':
       return {
@@ -58,15 +59,14 @@ const Heading = ({
   itemProp,
 }: HeadingProps) => {
   const HeadingTag = getHeadingTag(level)
+  const mergedClasses = twMerge(
+    `title-font font-medium mb-${marginBottom} ${HeadingTag.className}`,
+    className
+  )
 
   return (
     HeadingTag?.component && (
-      <HeadingTag.component
-        className={`title-font font-medium mb-${marginBottom}
-        ${HeadingTag.className}
-        ${className ? ` ${className}` : ''}`}
-        itemProp={itemProp}
-      >
+      <HeadingTag.component className={mergedClasses} itemProp={itemProp}>
         {text}
       </HeadingTag.component>
     )
