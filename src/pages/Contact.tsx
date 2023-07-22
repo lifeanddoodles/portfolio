@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Heading from '../components/Heading'
 import SectionParagraph from '../components/Paragraph/SectionParagraph'
+import SectionHeader from '../layout/SectionHeader'
 
 interface FormProps {
   name: string
@@ -39,7 +40,7 @@ const Form = ({
       className="xl:w-2/4 lg:w-3/4 mx-auto"
     >
       <div className="relative mb-4">
-        <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+        <label htmlFor="name" className="leading-7 text-sm">
           {t('name')}
         </label>
         <input
@@ -48,11 +49,11 @@ const Form = ({
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 w-full rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="relative mb-4">
-        <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+        <label htmlFor="email" className="leading-7 text-sm">
           {t('email')}
         </label>
         <input
@@ -61,11 +62,11 @@ const Form = ({
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 w-full rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
       <div className="relative mb-4">
-        <label htmlFor="message" className="leading-7 text-sm text-gray-400">
+        <label htmlFor="message" className="leading-7 text-sm">
           {t('message')}
         </label>
         <textarea
@@ -73,12 +74,12 @@ const Form = ({
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+          className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 w-full rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
         />
       </div>
       <button
         type="submit"
-        className="text-white bg-green-700 border-0 py-2 px-6 hover:bg-green-600 rounded text-lg"
+        className="text-neutral-100 hover:text-white bg-primary hover:bg-primary-dark py-2 px-6 rounded text-lg"
       >
         {t('submit')}
       </button>
@@ -141,11 +142,13 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
+      className="body-font container px-5 py-10 mx-auto lg:px-40"
     >
-      <EnvelopeIcon className="mx-auto inline-block w-10 mb-4" />
-      <Heading text={t('title')} />
-      <SectionParagraph text={t('description')} />
+      <SectionHeader>
+        <EnvelopeIcon className="mx-auto inline-block w-10 mb-4" />
+        <Heading text={t('title')} />
+        <SectionParagraph text={t('description')} />
+      </SectionHeader>
       <Form
         name={name}
         setName={setName}

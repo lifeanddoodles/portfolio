@@ -41,12 +41,12 @@ const Hero = () => {
         <div className="flex justify-center gap-4 flex-col sm:flex-row">
           <NativeLink
             url="#contact"
-            className="inline-flex text-white bg-green-700 border-0 py-2 px-6 hover:bg-green-600 rounded text-lg mb-4 text-center"
+            className="text-neutral-100 hover:text-white bg-primary hover:bg-primary-dark inline-flex border-0 py-2 px-6 rounded text-lg mb-4 text-center"
             label={t('hero.mainCta')}
           />
           <NativeLink
             url="#projects"
-            className="inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 hover:bg-gray-700 hover:text-white rounded text-lg mb-4 text-center"
+            className="text-neutral-800 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white bg-neutral-200 hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-900 inline-flex border-0 py-2 px-6 rounded text-lg mb-4 text-center"
             label={t('hero.secondaryCta')}
           />
         </div>

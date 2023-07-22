@@ -10,6 +10,7 @@ import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 import SectionParagraph from '../components/Paragraph/SectionParagraph'
 import Group from '../components/Group'
+import SectionHeader from '../layout/SectionHeader'
 
 // const pathToAssets = require.context('assets/', false, /\.(png|jpe?g|svg)$/)
 
@@ -35,7 +36,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
     <article
       itemScope
       itemType={`https://schema.org/${project.creativeItemType}`}
-      className="w-100 flex-auto md:max-w-sm p-4 bg-gray-800 rounded-lg flex flex-col"
+      className="bg-neutral-200 dark:bg-neutral-800 w-100 flex-auto md:max-w-sm p-4 rounded-lg flex flex-col"
     >
       {title && (
         <Heading
@@ -49,7 +50,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
         <Heading
           level={4}
           text={subtitle}
-          className="text-sm text-left tracking-widest text-green-400"
+          className="text-sm text-left tracking-widest text-primary-light"
         />
       )}
       {project?.image?.thumbnail && (
@@ -60,7 +61,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
           {project?.technologies.map((technology) => (
             <span
               key={technology}
-              className="m-1 px-3 py-1 text-gray-300 bg-gray-700 text-sm font-small rounded-full"
+              className="text-neutral-800 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-700 m-1 px-3 py-1 text-sm font-small rounded-full"
             >
               {technology}
             </span>
@@ -92,7 +93,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
               itemProp="url"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex text-gray-300 bg-green-700 border-0 py-2 px-6 hover:bg-gray-600 hover:text-white rounded text-lg mb-4"
+              className="text-neutral-100 hover:text-white bg-primary hover:bg-primary-dark inline-flex border-0 py-2 px-6 rounded text-lg mb-4"
             >
               {t('callsToAction.main')}
               <ArrowTopRightOnSquareIcon className="inline-block w-4 ml-2" />
@@ -109,13 +110,11 @@ const ProjectItem = ({ project }: { project: Project }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 itemProp="codeRepository"
-                className={`inline-flex text-gray-${
-                  !project.cta.live ? '300' : '400'
-                } bg-${
-                  !project.cta.live ? 'green-700' : 'gray-700'
-                } border-0 py-2 px-6 hover:bg-gray-${
-                  !project.cta.live ? '600' : '700'
-                } hover:text-white rounded text-lg mb-4`}
+                className={`inline-flex border-0 py-2 px-6 rounded text-lg mb-4 ${
+                  !project.cta.live
+                    ? 'text-neutral-100 hover:text-white bg-primary hover:bg-primary-dark'
+                    : 'text-neutral-800 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white bg-neutral-100 hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-900'
+                }`}
               >
                 {t('callsToAction.secondary')}
                 <ArrowTopRightOnSquareIcon className="inline-block w-4 ml-2" />
@@ -138,24 +137,29 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
+      className="container px-5 py-10 mx-auto text-center lg:px-40"
     >
-      <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
-      <Heading text={t('title')} />
-      <SectionParagraph
-        marginBottom={8}
-        text={
-          <Trans
-            i18nKey={'projects.description'}
-            components={{
-              bold_tag: <strong />,
-              external_anchor_tag: (
-                <NativeLink url="https://github.com/lifeanddoodles/portfolio" />
-              ),
-            }}
-          />
-        }
-      />
+      <SectionHeader>
+        <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
+        <Heading text={t('title')} />
+        <SectionParagraph
+          marginBottom={8}
+          text={
+            <Trans
+              i18nKey={'projects.description'}
+              components={{
+                bold_tag: <strong />,
+                external_anchor_tag: (
+                  <NativeLink
+                    className="icon-link text-primary-light hover:text-neutral-700 dark:hover:text-white"
+                    url="https://github.com/lifeanddoodles/portfolio"
+                  />
+                ),
+              }}
+            />
+          }
+        />
+      </SectionHeader>
       {projects.length > 0 && (
         <div className="flex flex-wrap justify-center gap-2 -m-4 lg:max-w-screen-xl">
           {projects?.map((project: Project) => {

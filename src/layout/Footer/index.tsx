@@ -18,7 +18,7 @@ export const Footer = () => {
         id="social"
       >
         <a
-          className="icon-link"
+          className="icon-link text-primary-light hover:text-neutral-700 dark:hover:text-white"
           href="https://github.com/lifeanddoodles"
           target="_blank"
           rel="noopener noreferrer"
@@ -28,7 +28,7 @@ export const Footer = () => {
           <FontAwesomeIcon icon={faGithub} /> Github
         </a>
         <a
-          className="icon-link ml-4"
+          className="icon-link text-primary-light hover:text-neutral-700 dark:hover:text-white ml-4"
           href="https://www.linkedin.com/in/sandralvargas/"
           target="_blank"
           rel="noopener noreferrer"

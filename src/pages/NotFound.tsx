@@ -6,7 +6,7 @@ const NotFound = (): JSX.Element => {
   const { t } = useTranslation('translation', { keyPrefix: 'notFound' })
 
   return (
-    <section className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40">
+    <section className="container px-5 py-10 mx-auto text-center lg:px-40">
       <Heading level={1} text={t('title')} />
       <p>{t('description')}</p>
       <Link to="/">{t('goBack')}</Link>

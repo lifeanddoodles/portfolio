@@ -21,18 +21,22 @@ export const Header = () => {
     <header
       id="site-header"
       data-testid="site-header"
-      className="bg-gray-800 md:sticky top-0 z-10"
+      className="bg-neutral-100 dark:bg-neutral-800 md:sticky top-0 z-10"
     >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center gap-5">
-        <h1 className="title-font font-medium text-white mb-4 md:mb-0 text-xl">
-          <Link to="/" rel="home" className="ml-3 text-xl">
+        <h1 className="title-font font-medium mb-4 md:mb-0 text-xl">
+          <Link
+            to="/"
+            rel="home"
+            className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white text-xl"
+          >
             {t('navMenu.home.label')}
           </Link>
         </h1>
         <Navbar />
         <a
           href="#contact"
-          className="md:mr-auto inline-flex items-center text-white bg-red-600 border-0 py-1 px-3 hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          className="text-white bg-accent hover:bg-accent-dark md:mr-auto inline-flex items-center border-0 py-1 px-3 rounded text-base mt-4 md:mt-0"
         >
           {t('navMenu.contact.label')}
         </a>

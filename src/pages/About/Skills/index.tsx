@@ -4,6 +4,7 @@ import { skills as skillsData } from '../../../data'
 import { Skill, SkillProficiencyLevel } from '../../../types/Model'
 import Heading from '../../../components/Heading'
 import SectionParagraph from '../../../components/Paragraph/SectionParagraph'
+import SectionHeader from '../../../layout/SectionHeader'
 
 interface SkillsListProps {
   proficiencyLevel: keyof typeof SkillProficiencyLevel
@@ -24,9 +25,7 @@ export const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
           .map(
             (skill: Skill): JSX.Element => (
               <li key={skill.id} className="p-2 w-full sm:w-1/2 md:w-1/3">
-                <strong className="text-white">
-                  {t(`items.${skill.id}.name`)}
-                </strong>
+                <strong>{t(`items.${skill.id}.name`)}</strong>
               </li>
             )
           )}
@@ -45,8 +44,10 @@ const Skills = () => {
 
   return (
     <section id="skills" className="my-10">
-      <SparklesIcon className="mx-auto inline-block w-10 mb-4" />
-      <Heading level={3} text={t('title')} />
+      <SectionHeader>
+        <SparklesIcon className="mx-auto inline-block w-10 mb-4" />
+        <Heading level={3} text={t('title')} />
+      </SectionHeader>
       <section itemProp="knowsAbout" id="skills">
         <SkillsList proficiencyLevel={SkillProficiencyLevel.advanced} />
         <SkillsList proficiencyLevel={SkillProficiencyLevel.medium} />

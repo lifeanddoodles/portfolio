@@ -4,6 +4,7 @@ import Skills from './Skills'
 import SoftSkills from './SoftSkills'
 import Heading from '../../components/Heading'
 import SectionParagraph from '../../components/Paragraph/SectionParagraph'
+import SectionHeader from '../../layout/SectionHeader'
 
 const About = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'about' })
@@ -16,10 +17,12 @@ const About = () => {
   return (
     <section
       id="about"
-      className="text-gray-400 bg-gray-900 body-font container px-5 py-10 mx-auto text-center lg:px-40"
+      className="container px-5 py-10 mx-auto text-center lg:px-40"
     >
-      <UserIcon className="mx-auto inline-block w-10 mb-4" />
-      <Heading text={t('title')} />
+      <SectionHeader>
+        <UserIcon className="mx-auto inline-block w-10 mb-4" />
+        <Heading text={t('title')} />
+      </SectionHeader>
       <Trans
         i18nKey="about.description"
         components={{

@@ -2,14 +2,17 @@ import { Trans, useTranslation } from 'react-i18next'
 import { knownLanguages, languagesProficiency } from '../../../data'
 import Heading from '../../../components/Heading'
 import SectionParagraph from '../../../components/Paragraph/SectionParagraph'
+import SectionHeader from '../../../layout/SectionHeader'
 
 const SoftSkills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'languages' })
 
   return (
     <section id="languages" className="my-10">
-      <Heading level={4} text={t('title')} />
-      <SectionParagraph text={t('description')} />
+      <SectionHeader>
+        <Heading level={4} text={t('title')} />
+        <SectionParagraph text={t('description')} />
+      </SectionHeader>
       <ul
         key="languagesList"
         itemProp="knowsLanguage"
@@ -18,7 +21,7 @@ const SoftSkills = () => {
       >
         {knownLanguages.map((item) => (
           <li key={item} className="p-2 sm:w-1/2 w-full">
-            <span className="title-font font-medium text-white">
+            <span className="title-font font-medium">
               {t(`labels.${item}`)} (
               {t(`proficiencyLevels.${languagesProficiency[item]}`)})
             </span>

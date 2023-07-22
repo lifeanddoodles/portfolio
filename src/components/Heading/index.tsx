@@ -13,22 +13,22 @@ const getHeadingTag = (
     case 'h1':
       return {
         component: 'h1',
-        className: 'text-white text-3xl md:text-4xl xl:text-5xl',
+        className: 'text-3xl md:text-4xl xl:text-5xl',
       }
     case 'h2':
       return {
         component: 'h2',
-        className: 'text-white text-4xl',
+        className: 'text-4xl',
       }
     case 'h3':
       return {
         component: 'h3',
-        className: 'text-white text-2xl',
+        className: 'text-2xl',
       }
     case 'h4':
       return {
         component: 'h4',
-        className: 'text-white text-lg',
+        className: 'text-lg',
       }
     case 'h5':
       return {
@@ -60,7 +60,7 @@ const Heading = ({
 }: HeadingProps) => {
   const HeadingTag = getHeadingTag(level)
   const mergedClasses = twMerge(
-    `title-font font-medium mb-${marginBottom} ${HeadingTag.className}`,
+    `title-font text-neutral-900 dark:text-white font-medium mb-${marginBottom} ${HeadingTag.className}`,
     className
   )
 
