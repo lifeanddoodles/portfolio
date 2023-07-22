@@ -8,6 +8,7 @@ const Option = ({ label, value }: OptionProps) => {
 
 const Select = ({
   label,
+  ariaLabel,
   options,
   value,
   onChange,
@@ -25,23 +26,22 @@ const Select = ({
   return (
     <SelectWrapper.component {...SelectWrapper.props}>
       {label && <label htmlFor={id}>{label}</label>}
-      <div>
-        <select
-          id={id}
-          value={value}
-          onChange={(e) => handleChange(e)}
-          disabled={disabled}
-          className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-700 rounded-lg border focus:ring-blue-500 focus:border-blue-500 block w-full p-2 pr-4 dark:placeholder-neutral-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        >
-          {options.map((option) => (
-            <Option
-              label={option.label}
-              value={option.value}
-              key={option.value}
-            />
-          ))}
-        </select>
-      </div>
+      <select
+        id={id}
+        value={value}
+        aria-label={ariaLabel}
+        onChange={(e) => handleChange(e)}
+        disabled={disabled}
+        className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-700 rounded-lg border focus:ring-blue-500 focus:border-blue-500 block p-2 pr-4 dark:placeholder-neutral-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      >
+        {options.map((option) => (
+          <Option
+            label={option.label}
+            value={option.value}
+            key={option.value}
+          />
+        ))}
+      </select>
     </SelectWrapper.component>
   )
 }

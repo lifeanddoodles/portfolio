@@ -42,7 +42,7 @@ export const Header = () => {
         </a>
         <Select
           id="changeLanguage"
-          label={t('languageSwitcher.label')}
+          ariaLabel={t('languageSwitcher.label')}
           value={i18n.language}
           options={[
             { label: t('languageSwitcher.options.en'), value: 'en' },

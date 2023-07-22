@@ -69,6 +69,7 @@ export interface OptionProps {
 
 export interface SelectProps {
   label?: string
+  ariaLabel?: string
   options: OptionProps[]
   value: string | number
   onChange: (event: string) => void
