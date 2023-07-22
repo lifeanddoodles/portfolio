@@ -151,7 +151,7 @@ const Projects = () => {
                 bold_tag: <strong />,
                 external_anchor_tag: (
                   <NativeLink
-                    className="icon-link text-primary-light hover:text-neutral-700 dark:hover:text-white"
+                    className="icon-link text-primary-light underline hover:text-neutral-700 dark:hover:text-white"
                     url="https://github.com/lifeanddoodles/portfolio"
                   />
                 ),

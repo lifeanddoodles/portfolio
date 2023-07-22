@@ -4,6 +4,7 @@ import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Heading from '../components/Heading'
 import SectionParagraph from '../components/Paragraph/SectionParagraph'
 import SectionHeader from '../layout/SectionHeader'
+import Input from '../components/Input'
 
 interface FormProps {
   name: string
@@ -27,6 +28,14 @@ const Form = ({
   ...rest
 }: FormProps) => {
   const { t } = useTranslation('translation', { keyPrefix: 'contact.form' })
+  const handleChange = (
+    event:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+    updateFunction: React.Dispatch<React.SetStateAction<string>>
+  ) => {
+    updateFunction(event.target.value)
+  }
   /*
    * TODO: Test that the form renders correctly.
    * TODO: Test that the form submits successfully.
@@ -43,26 +52,22 @@ const Form = ({
         <label htmlFor="name" className="leading-7 text-sm">
           {t('name')}
         </label>
-        <input
+        <Input
           type="text"
-          id="name"
           name="name"
           value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 w-full rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          onChange={(e) => handleChange(e, setName)}
         />
       </div>
       <div className="relative mb-4">
         <label htmlFor="email" className="leading-7 text-sm">
           {t('email')}
         </label>
-        <input
+        <Input
           type="email"
-          id="email"
           name="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 w-full rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          onChange={(e) => handleChange(e, setEmail)}
         />
       </div>
       <div className="relative mb-4">
@@ -73,7 +78,7 @@ const Form = ({
           id="message"
           name="message"
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => handleChange(e, setMessage)}
           className="text-neutral-800 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 w-full rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
         />
       </div>
