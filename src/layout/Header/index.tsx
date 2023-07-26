@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Navbar } from '../../components/Navbar'
 import Select from '../../components/Select'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
+import useDarkMode from '../../hooks/useDarkMode'
 
 export const Header = () => {
   const { t, i18n } = useTranslation('translation', { keyPrefix: 'header' })
@@ -16,6 +18,8 @@ export const Header = () => {
     it to the local storage variable. The language detector detects this and translates the text that
     is either in a "t" function or inside a "Trans" component */
   }
+
+  const { darkMode, toggleDarkMode } = useDarkMode()
 
   return (
     <header
@@ -50,6 +54,16 @@ export const Header = () => {
           ]}
           onChange={changeLanguage}
         />
+        <button onClick={toggleDarkMode}>
+          {darkMode ? (
+            <MoonIcon className="w-8 h-8 hover:text-neutral-700 dark:hover:text-white" />
+          ) : (
+            <SunIcon className="w-8 h-8 hover:text-neutral-700 dark:hover:text-white" />
+          )}
+          <span className="sr-only">
+            {darkMode ? 'Toggle light mode' : 'Toggle dark mode'}
+          </span>
+        </button>
       </div>
     </header>
   )

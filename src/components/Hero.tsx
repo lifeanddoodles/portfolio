@@ -27,7 +27,7 @@ const Hero = () => {
           }
         />
         <Paragraph
-          className="xl:text-2xl lg:text-lg"
+          className="xl:text-2xl lg:text-lg mb-8"
           marginBottom={8}
           text={
             <Trans
