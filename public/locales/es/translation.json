@@ -48,7 +48,6 @@
         "title": "Portafolio",
         "subtitle": "Aplicación React",
         "description": "Portafolio basado en un tutorial para aprender a usar Tailwind CSS con React. Agregué TypeScript, internacionalización y pruebas unitarias."
-      },
       }
     ],
     "callsToAction": {
