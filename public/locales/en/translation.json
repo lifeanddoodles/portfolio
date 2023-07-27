@@ -1,4 +1,5 @@
 {
+  "loading": "Loading...",
   "skipToContent": "Skip to content",
   "header": {
     "navMenu": {
@@ -26,6 +27,10 @@
     "languageSwitcher": {
       "label": "Change language",
       "options": { "en": "English", "es": "Español" }
+    },
+    "darkModeToggle": {
+      "toggleOn": "Toggle dark mode",
+      "toggleOff": "Toggle light mode"
     }
   },
   "hero": {

@@ -54,15 +54,19 @@ export const Header = () => {
           ]}
           onChange={changeLanguage}
         />
-        <button onClick={toggleDarkMode}>
+        <button
+          onClick={toggleDarkMode}
+          aria-label={
+            darkMode
+              ? t('darkModeToggle.toggleOff')
+              : t('darkModeToggle.toggleOn')
+          }
+        >
           {darkMode ? (
             <MoonIcon className="w-8 h-8 hover:text-neutral-700 dark:hover:text-white" />
           ) : (
             <SunIcon className="w-8 h-8 hover:text-neutral-700 dark:hover:text-white" />
           )}
-          <span className="sr-only">
-            {darkMode ? 'Toggle light mode' : 'Toggle dark mode'}
-          </span>
         </button>
       </div>
     </header>

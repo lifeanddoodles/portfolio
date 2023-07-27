@@ -5,17 +5,18 @@ import { BrowserRouter } from 'react-router-dom'
 import { App } from './App'
 import i18n from './i18n'
 import './tailwind.css'
+import Loading from './components/Loading'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
-        <I18nextProvider i18n={i18n}>
+      <I18nextProvider i18n={i18n}>
+        <Suspense fallback={<Loading />}>
           <App />
-        </I18nextProvider>
-      </Suspense>
+        </Suspense>
+      </I18nextProvider>
     </BrowserRouter>
   </React.StrictMode>
 )
