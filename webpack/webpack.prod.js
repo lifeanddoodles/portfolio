@@ -10,8 +10,12 @@ module.exports = {
           from: 'public',
           to: 'assets',
           globOptions: {
-            ignore: ['**/index.html'],
+            ignore: ['**/index.html', '**/*.css'],
           },
+        },
+        {
+          from: 'public/*.css',
+          to: './[name].css',
         },
       ],
     }),
