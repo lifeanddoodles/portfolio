@@ -63,7 +63,7 @@ describe('SkillsList', () => {
       )
 
       for (const skillNode of skillListItem.childNodes) {
-        expect(skillNode.nodeName).toBe('H4')
+        expect(skillNode.nodeName).toBe('STRONG')
       }
     })
   })

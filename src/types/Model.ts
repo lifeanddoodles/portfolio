@@ -71,7 +71,7 @@ export interface SelectProps {
   label?: string
   ariaLabel?: string
   options: OptionProps[]
-  value: string | number
+  value?: string | number
   onChange: (event: string) => void
   id?: string
   disabled?: boolean

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { Navbar } from '../../components/Navbar'
+import { Navbar } from '../Navbar'
 import Select from '../../components/Select'
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import useDarkMode from '../../hooks/useDarkMode'

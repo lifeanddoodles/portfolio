@@ -1,8 +1,8 @@
 import { Trans, useTranslation } from 'react-i18next'
-import codingImg from '../assets/images/coding.svg'
-import NativeLink from '../components/NativeLink'
-import Heading from './Heading'
-import Paragraph from './Paragraph'
+import codingImg from '../../assets/images/coding.svg'
+import NativeLink from '../../components/NativeLink'
+import Heading from '../../components/Heading'
+import Paragraph from '../../components/Paragraph'
 
 const Hero = () => {
   const { t } = useTranslation('translation')

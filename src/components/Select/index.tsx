@@ -1,6 +1,6 @@
 import { ChangeEvent, Fragment } from 'react'
-import { OptionProps, SelectProps } from '../types/Model'
-import Group from './Group'
+import { OptionProps, SelectProps } from '../../types/Model'
+import Group from '../Group'
 
 const Option = ({ label, value }: OptionProps) => {
   return <option value={value}>{label}</option>
