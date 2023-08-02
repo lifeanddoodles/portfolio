@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import i18n from 'i18next'
 import { I18nextProvider, initReactI18next } from 'react-i18next'
 import Skills, { SkillsList } from './index'
+import { skills } from '../../../data'
 
 describe('Skills', () => {
   beforeAll(() => {
@@ -47,24 +48,20 @@ describe('SkillsList', () => {
   })
 
   test('SkillsList renders correctly', () => {
+    const filteredSkills = skills.filter(
+      (skill) => skill.proficiencyLevel === 'medium'
+    )
+
     render(
       <I18nextProvider i18n={i18n}>
         <SkillsList proficiencyLevel={'medium'} />
       </I18nextProvider>
     )
 
-    const skillLists = screen.getAllByRole('list')
-    expect(skillLists.length).toBeGreaterThan(0)
+    const skillsList = screen.getByRole('list')
+    expect(skillsList).toBeInTheDocument()
 
     const skillListItems = screen.getAllByRole('listitem')
-    skillListItems.forEach((skillListItem) => {
-      expect(skillListItem.getAttribute('class')).toBe(
-        'p-2 w-full sm:w-1/2 md:w-1/3'
-      )
-
-      for (const skillNode of skillListItem.childNodes) {
-        expect(skillNode.nodeName).toBe('STRONG')
-      }
-    })
+    expect(skillListItems).toHaveLength(filteredSkills.length)
   })
 })
