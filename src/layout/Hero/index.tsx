@@ -9,6 +9,7 @@ const Hero = () => {
 
   return (
     <section
+      data-testid="hero"
       itemScope
       itemType="https://schema.org/Person"
       itemRef="languages skills social"

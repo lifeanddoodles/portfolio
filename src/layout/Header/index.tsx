@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { Navbar } from '../Navbar'
+import Navbar from '../Navbar'
 import Select from '../../components/Select'
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import useDarkMode from '../../hooks/useDarkMode'
@@ -24,7 +24,6 @@ export const Header = () => {
   return (
     <header
       id="site-header"
-      data-testid="site-header"
       className="bg-neutral-100 dark:bg-neutral-800 md:sticky top-0 z-10"
     >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center gap-5">

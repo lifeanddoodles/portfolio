@@ -6,6 +6,8 @@ import {
 
 export const knownLanguages: string[] = ['en', 'es']
 
+export const menuItems = ['projects', 'about', 'skills']
+
 export const languagesProficiency: { [key: string]: string } = {
   en: 'advanced',
   es: 'native',
