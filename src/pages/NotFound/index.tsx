@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import Heading from '../components/Heading'
+import Heading from '../../components/Heading'
 
 const NotFound = (): JSX.Element => {
   const { t } = useTranslation('translation', { keyPrefix: 'notFound' })

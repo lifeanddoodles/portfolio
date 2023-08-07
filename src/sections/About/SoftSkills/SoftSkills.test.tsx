@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import i18n from 'i18next'
 import { I18nextProvider, initReactI18next } from 'react-i18next'
 import SoftSkills from './index'
+import { knownLanguages } from '../../../data'
 
 jest.mock('react-i18next', () => ({
   ...jest.requireActual('react-i18next'),
@@ -35,13 +36,10 @@ describe('SoftSkills', () => {
     const heading = screen.getByRole('heading', { level: 4 })
     expect(heading).toBeInTheDocument()
 
-    const softSkillLists = screen.getAllByRole('list')
-    expect(softSkillLists.length).toBeGreaterThan(0)
+    const softSkillsList = screen.getByRole('list')
+    expect(softSkillsList).toBeInTheDocument()
 
     const softSkillListItems = screen.getAllByRole('listitem')
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    softSkillListItems.forEach((softSkillListItem) => {
-      // TODO: test that each soft skill is rendered
-    })
+    expect(softSkillListItems).toHaveLength(knownLanguages.length)
   })
 })

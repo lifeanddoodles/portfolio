@@ -8,15 +8,10 @@ import SectionHeader from '../../layout/SectionHeader'
 
 const About = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'about' })
-  /*
-   * TODO: Test that we can get the section info rendered correctly.
-   * TODO: Test that the heading levels are correct.
-   * TODO: Test that the languages rendered correctly.
-   */
 
   return (
     <section
-      id="about"
+      id="about-section"
       className="container px-5 py-10 mx-auto text-center lg:px-40"
     >
       <SectionHeader>

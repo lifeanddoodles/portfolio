@@ -36,14 +36,9 @@ export const SkillsList: React.FC<SkillsListProps> = ({ proficiencyLevel }) => {
 
 const Skills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'skills' })
-  /*
-   * TODO: Test that we can get the section info rendered correctly.
-   * TODO: Test that the heading levels are correct.
-   * TODO: Test that the skills rendered correctly.
-   */
 
   return (
-    <section id="skills" className="my-10">
+    <section id="skills-section" className="my-10">
       <SectionHeader>
         <SparklesIcon className="mx-auto inline-block w-10 mb-4" />
         <Heading level={3} text={t('title')} />

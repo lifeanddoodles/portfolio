@@ -22,7 +22,11 @@ const MenuItems = () => {
   return (
     <ul className="md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap gap-5 items-center text-base justify-center">
       {menuItems.map((item) => (
-        <MenuItem key={item} url={`#${item}`} label={t(`${item}.label`)} />
+        <MenuItem
+          key={item}
+          url={`#${item}-section`}
+          label={t(`${item}.label`)}
+        />
       ))}
     </ul>
   )

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
-import Heading from '../components/Heading'
-import SectionParagraph from '../components/Paragraph/SectionParagraph'
-import SectionHeader from '../layout/SectionHeader'
-import Input from '../components/Input'
+import Heading from '../../components/Heading'
+import SectionParagraph from '../../components/Paragraph/SectionParagraph'
+import SectionHeader from '../../layout/SectionHeader'
+import Input from '../../components/Input'
 
 interface FormProps {
   name: string
@@ -141,7 +141,6 @@ const Contact = () => {
 
   /*
    * TODO: Test that we can get the section info rendered correctly.
-   * TODO: Test that the heading levels are correct.
    */
 
   return (

@@ -3,14 +3,14 @@ import {
   CodeBracketIcon,
 } from '@heroicons/react/24/solid'
 import { Trans, useTranslation } from 'react-i18next'
-import NativeLink from '../components/NativeLink'
-import { projects } from '../data'
-import { Project } from '../types/Model'
-import Heading from '../components/Heading'
-import Paragraph from '../components/Paragraph'
-import SectionParagraph from '../components/Paragraph/SectionParagraph'
-import Group from '../components/Group'
-import SectionHeader from '../layout/SectionHeader'
+import NativeLink from '../../components/NativeLink'
+import { projects } from '../../data'
+import { Project } from '../../types/Model'
+import Heading from '../../components/Heading'
+import Paragraph from '../../components/Paragraph'
+import SectionParagraph from '../../components/Paragraph/SectionParagraph'
+import Group from '../../components/Group'
+import SectionHeader from '../../layout/SectionHeader'
 
 // const pathToAssets = require.context('assets/', false, /\.(png|jpe?g|svg)$/)
 
@@ -29,8 +29,6 @@ const ProjectItem = ({ project }: { project: Project }) => {
 
   /*
    * TODO: Test that we can get the project info rendered correctly.
-   * TODO: Test that external links work.
-   * TODO: Test that the heading levels are correct.
    */
   return (
     <article
@@ -131,8 +129,7 @@ const Projects = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'projects' })
 
   /*
-   * TODO: Test that we can get the section title and description rendered correctly
-   * TODO: Test that we can get the projects rendered correctly
+   * TODO: Test that we can get the section rendered correctly
    */
   return (
     <section

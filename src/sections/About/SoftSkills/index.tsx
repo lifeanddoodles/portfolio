@@ -8,7 +8,7 @@ const SoftSkills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'languages' })
 
   return (
-    <section id="languages" className="my-10">
+    <section id="languages-section" className="my-10">
       <SectionHeader>
         <Heading level={4} text={t('title')} />
         <SectionParagraph text={t('description')} />
