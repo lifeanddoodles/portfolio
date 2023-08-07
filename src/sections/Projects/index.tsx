@@ -12,24 +12,16 @@ import SectionParagraph from '../../components/Paragraph/SectionParagraph'
 import Group from '../../components/Group'
 import SectionHeader from '../../layout/SectionHeader'
 
-// const pathToAssets = require.context('assets/', false, /\.(png|jpe?g|svg)$/)
-
-/*
- * TODO: Test that we can get the index of a project
- */
 const getProjectIndex = (id: string) => {
   return projects.findIndex((p) => p.id === id)
 }
 
-const ProjectItem = ({ project }: { project: Project }) => {
+export const ProjectItem = ({ project }: { project: Project }) => {
   const { t } = useTranslation('translation', { keyPrefix: 'projects' })
   const title = t(`items.${getProjectIndex(project.id)}.title`)
   const subtitle = t(`items.${getProjectIndex(project.id)}.subtitle`)
   const description = t(`items.${getProjectIndex(project.id)}.description`)
 
-  /*
-   * TODO: Test that we can get the project info rendered correctly.
-   */
   return (
     <article
       itemScope
@@ -128,9 +120,6 @@ const ProjectItem = ({ project }: { project: Project }) => {
 const Projects = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'projects' })
 
-  /*
-   * TODO: Test that we can get the section rendered correctly
-   */
   return (
     <section
       id="projects"
