@@ -148,9 +148,9 @@
       }
     },
     "proficiencyDescription": {
-      "beginner": "Although it's not my main focus, I'm familiar with these technologies, mainly by following tutorials and courses I purchased since I wanted to learn more about them.",
-      "medium": "I am highly interested in these technologies and I actively use them in personal projects. I'm confident that I can solve issues I might encounter with them.",
-      "advanced": "I've used these technologies professionally, either in a freelance project or at a full-time job."
+      "beginner": "I'm also familiar with:",
+      "medium": "Although not yet in a professional project, I frequently use:",
+      "advanced": "I've used these technologies at a full-time job and/or as a freelancer:"
     }
   },
   "languages": {

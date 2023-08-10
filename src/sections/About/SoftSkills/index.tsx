@@ -1,7 +1,7 @@
 import { Trans, useTranslation } from 'react-i18next'
-import { knownLanguages, languagesProficiency } from '../../../data'
 import Heading from '../../../components/Heading'
 import SectionParagraph from '../../../components/Paragraph/SectionParagraph'
+import { knownLanguages, languagesProficiency } from '../../../data'
 import SectionHeader from '../../../layout/SectionHeader'
 
 const SoftSkills = () => {
@@ -10,7 +10,7 @@ const SoftSkills = () => {
   return (
     <section id="languages-section" className="my-10">
       <SectionHeader>
-        <Heading level={4} text={t('title')} />
+        <Heading level={4} text={t('title')} className="text-xl" />
         <SectionParagraph text={t('description')} />
       </SectionHeader>
       <ul

@@ -148,9 +148,9 @@
       }
     },
     "proficiencyDescription": {
-      "beginner": "Aunque no es mi enfoque principal, estoy familiarizada con estas tecnologías, principalmente siguiendo tutoriales y cursos que he adquirido, ya que quería aprender más sobre ellas.",
-      "medium": "Estoy muy interesada en estas tecnologías y las utilizo activamente en proyectos personales. Confío en que puedo resolver problemas que pueda encontrar con ellas.",
-      "advanced": "He utilizado estas tecnologías profesionalmente, ya sea en proyectos freelance o en un trabajo de tiempo completo."
+      "beginner": "También estoy familiarizada con:",
+      "medium": "Aunque aún no en un proyecto profesional, estoy familiarizada con:",
+      "advanced": "He utilizado estas tecnologías en un trabajo de tiempo completo y/o como freelancer:"
     }
   },
   "languages": {

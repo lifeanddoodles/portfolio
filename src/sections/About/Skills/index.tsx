@@ -1,10 +1,10 @@
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import { useTranslation } from 'react-i18next'
-import { skills as skillsData } from '../../../data'
-import { Skill, SkillProficiencyLevel } from '../../../types/Model'
 import Heading from '../../../components/Heading'
 import SectionParagraph from '../../../components/Paragraph/SectionParagraph'
+import { skills as skillsData } from '../../../data'
 import SectionHeader from '../../../layout/SectionHeader'
+import { Skill, SkillProficiencyLevel } from '../../../types/Model'
 
 interface SkillsListProps {
   proficiencyLevel: keyof typeof SkillProficiencyLevel
@@ -38,7 +38,7 @@ const Skills = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'skills' })
 
   return (
-    <section id="skills-section" className="my-10">
+    <section id="skills-section" className="my-20">
       <SectionHeader>
         <SparklesIcon className="mx-auto inline-block w-10 mb-4" />
         <Heading level={3} text={t('title')} />
