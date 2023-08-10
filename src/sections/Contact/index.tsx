@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
+import { FormEvent, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Heading from '../../components/Heading'
 import SectionParagraph from '../../components/Paragraph/SectionParagraph'
 import SectionHeader from '../../layout/SectionHeader'
 import Form from './Form'
-import { FormEvent, useState } from 'react'
 
 const Contact = () => {
   const [formData, setFormData] = useState<{ [key: string]: string }>({
@@ -58,7 +58,7 @@ const Contact = () => {
 
   return (
     <section
-      id="contact"
+      id="contact-section"
       className="body-font container px-5 py-10 mx-auto lg:px-40"
     >
       <SectionHeader>

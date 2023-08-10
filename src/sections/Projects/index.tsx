@@ -3,14 +3,14 @@ import {
   CodeBracketIcon,
 } from '@heroicons/react/24/solid'
 import { Trans, useTranslation } from 'react-i18next'
-import NativeLink from '../../components/NativeLink'
-import { projects } from '../../data'
-import { Project } from '../../types/Model'
+import Group from '../../components/Group'
 import Heading from '../../components/Heading'
+import NativeLink from '../../components/NativeLink'
 import Paragraph from '../../components/Paragraph'
 import SectionParagraph from '../../components/Paragraph/SectionParagraph'
-import Group from '../../components/Group'
+import { projects } from '../../data'
 import SectionHeader from '../../layout/SectionHeader'
+import { Project } from '../../types/Model'
 
 const getProjectIndex = (id: string) => {
   return projects.findIndex((p) => p.id === id)
@@ -122,7 +122,7 @@ const Projects = () => {
 
   return (
     <section
-      id="projects"
+      id="projects-section"
       className="container px-5 py-10 mx-auto text-center lg:px-40"
     >
       <SectionHeader>

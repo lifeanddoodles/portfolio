@@ -1,7 +1,7 @@
 import { Trans, useTranslation } from 'react-i18next'
 import codingImg from '../../assets/images/coding.svg'
-import NativeLink from '../../components/NativeLink'
 import Heading from '../../components/Heading'
+import NativeLink from '../../components/NativeLink'
 import Paragraph from '../../components/Paragraph'
 
 const Hero = () => {
@@ -41,12 +41,12 @@ const Hero = () => {
         />
         <div className="flex justify-center gap-4 flex-col sm:flex-row">
           <NativeLink
-            url="#contact"
+            url="#contact-section"
             className="text-neutral-100 hover:text-white bg-primary hover:bg-primary-dark inline-flex border-0 py-2 px-6 rounded text-lg mb-4 text-center"
             label={t('hero.mainCta')}
           />
           <NativeLink
-            url="#projects"
+            url="#projects-section"
             className="text-neutral-800 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white bg-neutral-200 hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-900 inline-flex border-0 py-2 px-6 rounded text-lg mb-4 text-center"
             label={t('hero.secondaryCta')}
           />

@@ -1,11 +1,13 @@
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
+import { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import Navbar from '../Navbar'
 import Select from '../../components/Select'
-import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import useDarkMode from '../../hooks/useDarkMode'
+import Navbar from '../Navbar'
 
 export const Header = () => {
+  const homeLinkRef = useRef<HTMLAnchorElement>(null)
   const { t, i18n } = useTranslation('translation', { keyPrefix: 'header' })
   /* The names of the translation files that will be used in the component. 
   You can include multiple or just leave it empty and look through all the translation files 
@@ -21,6 +23,21 @@ export const Header = () => {
 
   const { darkMode, toggleDarkMode } = useDarkMode()
 
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+    const homeLink = homeLinkRef.current
+
+    if (!homeLink) return
+
+    homeLink.addEventListener('click', scrollToTop)
+
+    return () => {
+      homeLink.removeEventListener('click', scrollToTop)
+    }
+  }, [])
+
   return (
     <header
       id="site-header"
@@ -31,6 +48,7 @@ export const Header = () => {
           <Link
             to="/"
             rel="home"
+            ref={homeLinkRef}
             className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white text-xl"
           >
             {t('navMenu.home.label')}
@@ -38,7 +56,7 @@ export const Header = () => {
         </h1>
         <Navbar />
         <a
-          href="#contact"
+          href="#contact-section"
           className="text-white bg-accent hover:bg-accent-dark md:mr-auto inline-flex items-center border-0 py-1 px-3 rounded text-base mt-4 md:mt-0"
         >
           {t('navMenu.contact.label')}
